@@ -1,0 +1,478 @@
+{
+  "title": "Git vs GitHub",
+  "ratio": "9:16",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "accentDark": "#3946C6",
+    "line": "#404249",
+    "text": "#F2F3F5",
+    "font": "Avenir Next, Arial, sans-serif"
+  },
+  "script": "Git sama GitHub itu bukan hal yang sama. Dan kalau lu sering vibe coding, lu wajib ngerti bedanya. Anggap aja lu lagi bikin aplikasi pake AI. Hari pertama aplikasinya bagus. Terus lu bilang ke AI: Coba ubah bagian login. AI ubah banyak file, dan tiba-tiba aplikasi lu malah error. Masalahnya, lu nggak inget sebelumnya kode yang bener kayak gimana. Nah, di sinilah Git berguna. Git itu sistem version control yang jalan di project lu. Simpelnya, Git bisa nyimpen checkpoint dari kode lu. Misalnya sekarang fitur login udah beres. Lu bikin satu checkpoint. Besok lu tambahin payment, bikin checkpoint lagi. Terus lu eksperimen pake AI dan project-nya rusak? Lu bisa lihat apa yang berubah atau balik ke versi sebelumnya. Jadi Git itu kurang lebih kayak save point di game, tapi buat source code. Terus GitHub apa? GitHub itu tempat untuk menyimpan repository Git lu secara online. Kalau Git tadi bekerja sebagai sistem pencatat perubahan kode, GitHub jadi tempat repository itu disimpan, dibagikan, dan dikerjakan bareng. Analoginya gampang. Git itu fitur save-nya. GitHub itu cloud tempat save-an lu disimpan. Makanya lu bisa pake Git tanpa GitHub. Project lu tetap bisa punya commit, branch, dan history meskipun semuanya cuma ada di laptop. Tapi kalau repository itu lu push ke GitHub, kode lu juga punya salinan online dan lebih gampang buat kolaborasi. Workflow paling sederhananya kayak gini. Lu bikin atau edit aplikasi. Git mendeteksi file yang berubah. Lu pilih perubahan yang mau disimpan. Terus bikin commit sebagai checkpoint. Setelah itu commit tersebut bisa lu push ke GitHub. Jadi: Git mengatur history perubahan kode. GitHub menyimpan dan membantu lu mengelola repository itu secara online. Dan buat lu yang vibe coding, ini penting banget. Karena sebelum nyuruh AI melakukan perubahan besar, bikin commit dulu. Kalau hasil coding AI ternyata berantakan, lu punya jalan buat balik. Jadi jangan tunggu project lu rusak dulu baru belajar Git. Vibe coding boleh cepat. Tapi kode lu tetap harus punya save point.",
+  "scenes": [
+    {
+      "text": "Git ≠ GitHub",
+      "motion": "compare-slide-left",
+      "visual": {
+        "type": "compare",
+        "kicker": "GIT VS GITHUB",
+        "left": {
+          "title": "Git",
+          "detail": "History di project",
+          "image": "/assets/git-vs-github/logos/git-white.svg"
+        },
+        "right": {
+          "title": "GitHub",
+          "detail": "Repository online",
+          "image": "/assets/git-vs-github/logos/github-white.svg"
+        },
+        "active": -1
+      },
+      "voiceText": "Git sama GitHub itu bukan hal yang sama. Dan kalau lu sering vibe coding, lu wajib ngerti bedanya.",
+      "seconds": 4.8,
+      "audio": "/assets/git-vs-github/voice/01.m4a"
+    },
+    {
+      "text": "Hari pertama: aplikasi aman",
+      "motion": "cards-stagger",
+      "visual": {
+        "type": "cards",
+        "kicker": "VIBE CODING",
+        "items": [
+          {
+            "icon": "✦",
+            "title": "AI bantu bikin aplikasi",
+            "detail": "Proyek mulai berjalan"
+          },
+          {
+            "icon": "✓",
+            "title": "Login sudah beres",
+            "detail": "Versi ini masih aman",
+            "highlighted": true
+          }
+        ]
+      },
+      "voiceText": "Anggap aja lu lagi bikin aplikasi pake AI. Hari pertama aplikasinya bagus.",
+      "seconds": 4.1,
+      "audio": "/assets/git-vs-github/voice/02.m4a"
+    },
+    {
+      "text": "“Coba ubah bagian login”",
+      "motion": "terminal-type",
+      "visual": {
+        "type": "terminal",
+        "kicker": "PROMPT KE AI",
+        "window": "assistant / project",
+        "lines": [
+          "> Coba ubah bagian login",
+          "↳ membaca project...",
+          "↳ mengedit beberapa file..."
+        ]
+      },
+      "voiceText": "Terus lu bilang ke AI: Coba ubah bagian login.",
+      "seconds": 2.6,
+      "audio": "/assets/git-vs-github/voice/03.m4a"
+    },
+    {
+      "text": "Tiba-tiba aplikasi error",
+      "motion": "image-slide-left",
+      "visual": {
+        "type": "image",
+        "kicker": "PERUBAHAN BESAR"
+      },
+      "image": "/assets/git-vs-github/error-2d.png",
+      "voiceText": "AI ubah banyak file, dan tiba-tiba aplikasi lu malah error.",
+      "seconds": 3.3,
+      "audio": "/assets/git-vs-github/voice/04.m4a"
+    },
+    {
+      "text": "Versi yang benar di mana?",
+      "motion": "focus-pop",
+      "visual": {
+        "type": "focus",
+        "kicker": "MASALAHNYA",
+        "keyword": "VERSI AMAN?",
+        "note": "Tanpa checkpoint, sulit tahu apa yang berubah"
+      },
+      "voiceText": "Masalahnya, lu nggak inget sebelumnya kode yang bener kayak gimana.",
+      "seconds": 3.2,
+      "audio": "/assets/git-vs-github/voice/05.m4a"
+    },
+    {
+      "text": "Git mencatat perubahan kode",
+      "motion": "image-zoom",
+      "visual": {
+        "type": "image",
+        "kicker": "INILAH GIT"
+      },
+      "image": "/assets/git-vs-github/logos/git-white.svg",
+      "voiceText": "Nah, di sinilah Git berguna. Git itu sistem version control yang jalan di project lu.",
+      "seconds": 4.4,
+      "audio": "/assets/git-vs-github/voice/06.m4a"
+    },
+    {
+      "text": "Git menyimpan checkpoint",
+      "motion": "image-zoom",
+      "visual": {
+        "type": "image",
+        "kicker": "VERSION CONTROL"
+      },
+      "image": "/assets/git-vs-github/savepoint-2d.png",
+      "voiceText": "Simpelnya, Git bisa nyimpen checkpoint dari kode lu.",
+      "seconds": 2.8,
+      "audio": "/assets/git-vs-github/voice/07.m4a"
+    },
+    {
+      "text": "Login selesai → commit pertama",
+      "motion": "timeline-build",
+      "visual": {
+        "type": "timeline",
+        "kicker": "TRACKING COMMIT",
+        "nodes": [
+          {
+            "id": "01",
+            "title": "Login beres",
+            "detail": "Commit pertama"
+          },
+          {
+            "id": "02",
+            "title": "Payment",
+            "detail": "Belum dikerjakan",
+            "status": "pending"
+          }
+        ],
+        "active": 0,
+        "takeaway": "Versi aman tersimpan"
+      },
+      "voiceText": "Misalnya sekarang fitur login udah beres. Lu bikin satu checkpoint.",
+      "seconds": 3.5,
+      "audio": "/assets/git-vs-github/voice/08.m4a"
+    },
+    {
+      "text": "Payment selesai → commit lagi",
+      "motion": "timeline-build",
+      "visual": {
+        "type": "timeline",
+        "kicker": "HISTORY BERTAMBAH",
+        "nodes": [
+          {
+            "id": "01",
+            "title": "Login beres",
+            "detail": "Commit pertama"
+          },
+          {
+            "id": "02",
+            "title": "Payment beres",
+            "detail": "Commit kedua"
+          }
+        ],
+        "active": 1,
+        "takeaway": "Setiap fitur punya checkpoint"
+      },
+      "voiceText": "Besok lu tambahin payment, bikin checkpoint lagi.",
+      "seconds": 2.7,
+      "audio": "/assets/git-vs-github/voice/09.m4a"
+    },
+    {
+      "text": "Eksperimen rusak? Balik ke commit",
+      "motion": "timeline-reverse",
+      "visual": {
+        "type": "timeline",
+        "kicker": "JALAN UNTUK BALIK",
+        "nodes": [
+          {
+            "id": "01",
+            "title": "Login aman",
+            "detail": "Commit pertama"
+          },
+          {
+            "id": "02",
+            "title": "Payment aman",
+            "detail": "Commit kedua"
+          },
+          {
+            "title": "Eksperimen AI",
+            "detail": "Project error",
+            "status": "broken"
+          }
+        ],
+        "active": 1,
+        "takeaway": "↶ Kembali ke versi yang berfungsi"
+      },
+      "voiceText": "Terus lu eksperimen pake AI dan project-nya rusak? Lu bisa lihat apa yang berubah atau balik ke versi sebelumnya.",
+      "seconds": 5.4,
+      "audio": "/assets/git-vs-github/voice/10.m4a"
+    },
+    {
+      "text": "Save point untuk source code",
+      "motion": "image-slide-right",
+      "visual": {
+        "type": "image",
+        "kicker": "ANALOGI GAMPANG"
+      },
+      "image": "/assets/git-vs-github/savepoint-2d.png",
+      "voiceText": "Jadi Git itu kurang lebih kayak save point di game, tapi buat source code.",
+      "seconds": 3.7,
+      "audio": "/assets/git-vs-github/voice/11.m4a"
+    },
+    {
+      "text": "GitHub menyimpan repo online",
+      "motion": "image-slide-left",
+      "visual": {
+        "type": "image",
+        "kicker": "LALU GITHUB?"
+      },
+      "image": "/assets/git-vs-github/logos/github-white.svg",
+      "voiceText": "Terus GitHub apa? GitHub itu tempat untuk menyimpan repository Git lu secara online.",
+      "seconds": 4.4,
+      "audio": "/assets/git-vs-github/voice/12.m4a"
+    },
+    {
+      "text": "Simpan · bagikan · kolaborasi",
+      "motion": "cards-stagger",
+      "visual": {
+        "type": "cards",
+        "kicker": "DI GITHUB",
+        "items": [
+          {
+            "icon": "☁",
+            "title": "Simpan online",
+            "detail": "Salinan repository"
+          },
+          {
+            "icon": "↗",
+            "title": "Bagikan",
+            "detail": "Beri akses ke orang lain"
+          },
+          {
+            "icon": "✧",
+            "title": "Kolaborasi",
+            "detail": "Kerja bareng dalam satu repo",
+            "highlighted": true
+          }
+        ]
+      },
+      "voiceText": "Kalau Git tadi bekerja sebagai sistem pencatat perubahan kode, GitHub jadi tempat repository itu disimpan, dibagikan, dan dikerjakan bareng.",
+      "seconds": 6.9,
+      "audio": "/assets/git-vs-github/voice/13.m4a"
+    },
+    {
+      "text": "Git = fitur save",
+      "motion": "focus-pop",
+      "visual": {
+        "type": "focus",
+        "kicker": "ANALOGINYA",
+        "keyword": "SAVE",
+        "note": "Git mencatat checkpoint dan history"
+      },
+      "voiceText": "Analoginya gampang. Git itu fitur save-nya.",
+      "seconds": 2.6,
+      "audio": "/assets/git-vs-github/voice/14.m4a"
+    },
+    {
+      "text": "GitHub = cloud untuk save-an",
+      "motion": "image-slide-right",
+      "visual": {
+        "type": "image",
+        "kicker": "ANALOGINYA"
+      },
+      "image": "/assets/git-vs-github/cloud-2d.png",
+      "voiceText": "GitHub itu cloud tempat save-an lu disimpan.",
+      "seconds": 2.5,
+      "audio": "/assets/git-vs-github/voice/15.m4a"
+    },
+    {
+      "text": "Git tetap jalan di laptop",
+      "motion": "cards-stagger",
+      "visual": {
+        "type": "cards",
+        "kicker": "TANPA GITHUB PUN BISA",
+        "items": [
+          {
+            "icon": "●",
+            "title": "Commit",
+            "detail": "Simpan perubahan"
+          },
+          {
+            "icon": "⑂",
+            "title": "Branch",
+            "detail": "Buat jalur kerja"
+          },
+          {
+            "icon": "↶",
+            "title": "History",
+            "detail": "Lihat versi sebelumnya",
+            "highlighted": true
+          }
+        ]
+      },
+      "voiceText": "Makanya lu bisa pake Git tanpa GitHub. Project lu tetap bisa punya commit, branch, dan history meskipun semuanya cuma ada di laptop.",
+      "seconds": 6.7,
+      "audio": "/assets/git-vs-github/voice/16.m4a"
+    },
+    {
+      "text": "Push membuat salinan online",
+      "motion": "flow-build",
+      "visual": {
+        "type": "flow",
+        "kicker": "DARI LOKAL KE ONLINE",
+        "steps": [
+          "Laptop",
+          "Push",
+          "GitHub"
+        ],
+        "active": 2,
+        "takeaway": "Repository lebih mudah dibagikan"
+      },
+      "voiceText": "Tapi kalau repository itu lu push ke GitHub, kode lu juga punya salinan online dan lebih gampang buat kolaborasi.",
+      "seconds": 5.6,
+      "audio": "/assets/git-vs-github/voice/17.m4a"
+    },
+    {
+      "text": "Edit aplikasi → lihat perubahan",
+      "motion": "flow-build",
+      "visual": {
+        "type": "flow",
+        "kicker": "WORKFLOW SEDERHANA",
+        "steps": [
+          "Edit",
+          "Git status",
+          "Pilih file"
+        ],
+        "active": 1,
+        "takeaway": "Git menunjukkan file yang berubah"
+      },
+      "voiceText": "Workflow paling sederhananya kayak gini. Lu bikin atau edit aplikasi. Git mendeteksi file yang berubah.",
+      "seconds": 5.1,
+      "audio": "/assets/git-vs-github/voice/18.m4a"
+    },
+    {
+      "text": "Pilih perubahan, lalu commit",
+      "motion": "terminal-type",
+      "visual": {
+        "type": "terminal",
+        "kicker": "BUAT CHECKPOINT",
+        "window": "project / terminal",
+        "lines": [
+          "$ git status",
+          "modified: login.js",
+          "$ git add login.js",
+          "$ git commit -m \"login beres\""
+        ],
+        "takeaway": "Commit menyimpan perubahan yang dipilih"
+      },
+      "voiceText": "Lu pilih perubahan yang mau disimpan. Terus bikin commit sebagai checkpoint.",
+      "seconds": 3.7,
+      "audio": "/assets/git-vs-github/voice/19.m4a"
+    },
+    {
+      "text": "Commit bisa di-push ke GitHub",
+      "motion": "terminal-type",
+      "visual": {
+        "type": "terminal",
+        "kicker": "KIRIM KE GITHUB",
+        "window": "project / terminal",
+        "lines": [
+          "$ git push origin main",
+          "→ mengirim commit...",
+          "✓ repository online diperbarui"
+        ]
+      },
+      "voiceText": "Setelah itu commit tersebut bisa lu push ke GitHub.",
+      "seconds": 2.7,
+      "audio": "/assets/git-vs-github/voice/20.m4a"
+    },
+    {
+      "text": "Git atur history. GitHub simpan repo.",
+      "motion": "compare-slide-left",
+      "visual": {
+        "type": "compare",
+        "kicker": "INGAT BEDANYA",
+        "left": {
+          "title": "Git",
+          "detail": "Atur history kode",
+          "image": "/assets/git-vs-github/logos/git-white.svg"
+        },
+        "right": {
+          "title": "GitHub",
+          "detail": "Simpan repo online",
+          "image": "/assets/git-vs-github/logos/github-white.svg"
+        },
+        "active": -1
+      },
+      "voiceText": "Jadi: Git mengatur history perubahan kode. GitHub menyimpan dan membantu lu mengelola repository itu secara online.",
+      "seconds": 5.7,
+      "audio": "/assets/git-vs-github/voice/21.m4a"
+    },
+    {
+      "text": "Sebelum AI ngoding: commit dulu",
+      "motion": "image-zoom",
+      "visual": {
+        "type": "image",
+        "kicker": "KEBIASAAN PENTING"
+      },
+      "image": "/assets/git-vs-github/savepoint-2d.png",
+      "voiceText": "Dan buat lu yang vibe coding, ini penting banget. Karena sebelum nyuruh AI melakukan perubahan besar, bikin commit dulu.",
+      "seconds": 5.7,
+      "audio": "/assets/git-vs-github/voice/22.m4a"
+    },
+    {
+      "text": "Kalau rusak, balik ke checkpoint",
+      "motion": "timeline-reverse",
+      "visual": {
+        "type": "timeline",
+        "kicker": "SAAT AI BERANTAKAN",
+        "nodes": [
+          {
+            "id": "01",
+            "title": "Commit aman",
+            "detail": "Sebelum perubahan besar"
+          },
+          {
+            "title": "Eksperimen AI",
+            "detail": "Kode bermasalah",
+            "status": "broken"
+          },
+          {
+            "id": "↶",
+            "title": "Restore",
+            "detail": "Balik ke versi aman"
+          }
+        ],
+        "active": 2,
+        "takeaway": "Kerjaan lu nggak hilang"
+      },
+      "voiceText": "Kalau hasil coding AI ternyata berantakan, lu punya jalan buat balik.",
+      "seconds": 3.6,
+      "audio": "/assets/git-vs-github/voice/23.m4a"
+    },
+    {
+      "text": "Jangan tunggu project rusak",
+      "motion": "statement-rise",
+      "visual": {
+        "type": "statement",
+        "kicker": "MULAI DARI SEKARANG",
+        "accentWord": "rusak",
+        "accentColor": "red"
+      },
+      "voiceText": "Jadi jangan tunggu project lu rusak dulu baru belajar Git.",
+      "seconds": 2.9,
+      "audio": "/assets/git-vs-github/voice/24.m4a"
+    },
+    {
+      "text": "Kode lu tetap butuh save point",
+      "motion": "focus-pop",
+      "visual": {
+        "type": "focus",
+        "kicker": "VIBE CODING BOLEH CEPAT",
+        "keyword": "SAVE POINT",
+        "note": "Bikin commit sebelum perubahan besar"
+      },
+      "voiceText": "Vibe coding boleh cepat. Tapi kode lu tetap harus punya save point.",
+      "seconds": 3.5,
+      "audio": "/assets/git-vs-github/voice/25.m4a"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "title": "SQL vs NoSQL — Breakdown 2D",
+  "template": "sql-vs-nosql-story",
+  "ratio": "9:16",
+  "audio": "/assets/sql-vs-nosql/narasi.mp3",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "line": "#404249",
+    "text": "#F2F3F5"
+  },
+  "scenes": [
+    {
+      "text": "SQL vs NoSQL",
+      "seconds": 5.933333333333334,
+      "motion": "intro-01",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "intro",
+        "kicker": "OPENING",
+        "caption": "Dua cara mengatur data"
+      }
+    },
+    {
+      "text": "Mulai dari SQL",
+      "seconds": 2.2333333333333334,
+      "motion": "sql-title-02",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "sql-title",
+        "kicker": "01 / SQL",
+        "caption": "Structured Query Language"
+      }
+    },
+    {
+      "text": "Database relasional",
+      "seconds": 3.1666666666666665,
+      "motion": "relational-03",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "relational",
+        "kicker": "MODEL RELASIONAL",
+        "caption": "Data saling terhubung"
+      }
+    },
+    {
+      "text": "Data berbentuk tabel",
+      "seconds": 3.3666666666666667,
+      "motion": "table-build-04",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "table-build",
+        "kicker": "TABEL",
+        "caption": "Baris dan kolom yang teratur"
+      }
+    },
+    {
+      "text": "Tabel users",
+      "seconds": 4.933333333333334,
+      "motion": "users-05",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "users",
+        "kicker": "TABEL PERTAMA",
+        "caption": "id · name · email"
+      }
+    },
+    {
+      "text": "Tabel orders",
+      "seconds": 5.5,
+      "motion": "orders-06",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "orders",
+        "kicker": "TABEL KEDUA",
+        "caption": "id · user_id · total"
+      }
+    },
+    {
+      "text": "Dihubungkan oleh relasi",
+      "seconds": 4.866666666666666,
+      "motion": "relation-07",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "relation",
+        "kicker": "RELASI",
+        "caption": "orders.user_id → users.id"
+      }
+    },
+    {
+      "text": "Seperti lemari arsip",
+      "seconds": 4.4,
+      "motion": "cabinet-08",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "cabinet",
+        "kicker": "ANALOGI SQL",
+        "caption": "Setiap data punya tempat"
+      }
+    },
+    {
+      "text": "Tempat dan format jelas",
+      "seconds": 3.966666666666667,
+      "motion": "drawer-09",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "drawer",
+        "kicker": "STRUKTUR",
+        "caption": "Laci tersusun menurut jenisnya"
+      }
+    },
+    {
+      "text": "Formulir dengan field tetap",
+      "seconds": 4.166666666666667,
+      "motion": "form-10",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "form",
+        "kicker": "FORMULIR",
+        "caption": "nama · email · telepon"
+      }
+    },
+    {
+      "text": "Semua mengikuti struktur",
+      "seconds": 4.333333333333333,
+      "motion": "schema-11",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "schema",
+        "kicker": "SCHEMA",
+        "caption": "Bentuk data ditentukan sejak awal"
+      }
+    },
+    {
+      "text": "Contoh SQL",
+      "seconds": 4.533333333333333,
+      "motion": "sql-logos-12",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "sql-logos",
+        "kicker": "CONTOH DATABASE",
+        "caption": "PostgreSQL · MySQL · SQL Server"
+      }
+    },
+    {
+      "text": "Lalu, NoSQL?",
+      "seconds": 2.3,
+      "motion": "nosql-title-13",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "nosql-title",
+        "kicker": "02 / NOSQL",
+        "caption": "Model data yang berbeda"
+      }
+    },
+    {
+      "text": "Tidak harus berbentuk tabel",
+      "seconds": 5.833333333333333,
+      "motion": "nosql-model-14",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "nosql-model",
+        "kicker": "MODEL NOSQL",
+        "caption": "NoSQL mencakup beberapa model data"
+      }
+    },
+    {
+      "text": "Salah satunya: dokumen",
+      "seconds": 4.133333333333334,
+      "motion": "document-15",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "document",
+        "kicker": "DOCUMENT DATABASE",
+        "caption": "Data disimpan sebagai dokumen"
+      }
+    },
+    {
+      "text": "User sebagai objek JSON",
+      "seconds": 3.5,
+      "motion": "json-16",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "json",
+        "kicker": "JSON",
+        "caption": "Field ditulis sebagai pasangan key dan value"
+      }
+    },
+    {
+      "text": "User A: field dasar",
+      "seconds": 2.9,
+      "motion": "user-a-17",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "user-a",
+        "kicker": "DOKUMEN A",
+        "caption": "nama · email · alamat"
+      }
+    },
+    {
+      "text": "User B: field tambahan",
+      "seconds": 6.8,
+      "motion": "user-b-18",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "user-b",
+        "kicker": "DOKUMEN B",
+        "caption": "foto · sosial media · preferensi"
+      }
+    },
+    {
+      "text": "Struktur lebih fleksibel",
+      "seconds": 2.7,
+      "motion": "flex-19",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "flex",
+        "kicker": "FLEKSIBILITAS",
+        "caption": "Dokumen dapat memiliki field berbeda"
+      }
+    },
+    {
+      "text": "Seperti kotak penyimpanan",
+      "seconds": 3.6333333333333333,
+      "motion": "boxes-20",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "boxes",
+        "kicker": "ANALOGI NOSQL",
+        "caption": "Masing-masing menyimpan isi sendiri"
+      }
+    },
+    {
+      "text": "Isi tiap kotak berbeda",
+      "seconds": 5.033333333333333,
+      "motion": "box-variety-21",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "box-variety",
+        "kicker": "VARIASI",
+        "caption": "Struktur menyesuaikan kebutuhan"
+      }
+    },
+    {
+      "text": "Contoh: MongoDB",
+      "seconds": 4.066666666666666,
+      "motion": "mongo-22",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "mongo",
+        "kicker": "CONTOH DATABASE",
+        "caption": "Document database yang populer"
+      }
+    },
+    {
+      "text": "Mana yang lebih bagus?",
+      "seconds": 3.1,
+      "motion": "question-23",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "question",
+        "kicker": "PILIH YANG MANA?",
+        "caption": "Lihat kebutuhan aplikasinya"
+      }
+    },
+    {
+      "text": "Pilih yang cocok",
+      "seconds": 6.8,
+      "motion": "fit-24",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "fit",
+        "kicker": "PRINSIP UTAMA",
+        "caption": "Kebutuhan data menentukan pilihan"
+      }
+    },
+    {
+      "text": "Struktur jelas + banyak relasi",
+      "seconds": 4.833333333333333,
+      "motion": "sql-criteria-25",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "sql-criteria",
+        "kicker": "COCOK UNTUK SQL",
+        "caption": "Ditambah kebutuhan transaksi kuat"
+      }
+    },
+    {
+      "text": "SQL sering jadi pilihan",
+      "seconds": 2.433333333333333,
+      "motion": "sql-choice-26",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "sql-choice",
+        "kicker": "KEPUTUSAN",
+        "caption": "Relasi dan transaksi jadi kekuatan"
+      }
+    },
+    {
+      "text": "Struktur sangat fleksibel",
+      "seconds": 5.0,
+      "motion": "nosql-criteria-27",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "nosql-criteria",
+        "kicker": "COCOK UNTUK NOSQL",
+        "caption": "Pola akses cocok dengan model NoSQL"
+      }
+    },
+    {
+      "text": "Kebutuhan distribusi tertentu",
+      "seconds": 3.2,
+      "motion": "distributed-28",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "distributed",
+        "kicker": "PERTIMBANGAN",
+        "caption": "Pertimbangkan desain dan skala sistem"
+      }
+    },
+    {
+      "text": "NoSQL bisa jadi pilihan",
+      "seconds": 2.433333333333333,
+      "motion": "final-29",
+      "visual": {
+        "type": "sql-nosql-story",
+        "mode": "final",
+        "kicker": "KESIMPULAN",
+        "caption": "Pilih sesuai kebutuhan aplikasi"
+      }
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "title": "Anatomi URL: Satu Alamat, Banyak Tugas",
+  "template": "url-story",
+  "ratio": "9:16",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#7684FF",
+    "accentDark": "#3946C6",
+    "line": "#404249",
+    "text": "#F2F3F5"
+  },
+  "script": "Alamat website yang sering lu buka itu ternyata punya struktur dan fungsinya. Mari kita breakdown. Misalnya, ada alamat website kayak gini: https://shop.example.com:8080/products/123?color=black&size=M#reviews. Kelihatannya cuma deretan teks panjang, kan? Padahal setiap bagiannya punya tugas sendiri. Pertama, Protocol atau Scheme. Bagian https://. Ini menentukan protokol yang digunakan untuk mengakses resource. HTTP digunakan untuk komunikasi web, sedangkan HTTPS menggunakan koneksi yang dilindungi enkripsi TLS. Kedua, Subdomain. Ini biasanya digunakan untuk memisahkan layanan atau bagian tertentu dari sebuah website. Misalnya blog.example.com untuk blog atau shop.example.com untuk toko online. Ketiga, Domain. Bagian example.com. Ini adalah nama domain yang digunakan untuk mengidentifikasi alamat website. Keempat, Port. Port itu angka 8080 setelah tanda titik dua. Ini digunakan untuk menentukan layanan jaringan mana yang dituju pada sebuah server. Secara default, HTTP menggunakan port 80, sedangkan HTTPS menggunakan port 443. Makanya angka port biasanya nggak kelihatan di URL yang kita buka sehari-hari. Kelima, Path. Bagian /products/123. Ini menunjukkan lokasi atau rute yang ingin diakses. Misalnya halaman detail produk dengan ID 123. Keenam, Query Parameters. Bagian setelah tanda tanya: ?color=black&size=M. Ini digunakan untuk mengirimkan informasi tambahan melalui URL. Dalam contoh ini, kita punya dua parameter, yaitu color bernilai black dan size bernilai M. Makanya waktu lu membuka halaman pencarian atau menggunakan filter produk, URL-nya sering berubah. Ketujuh, Fragment. Bagian #reviews. Ini digunakan untuk menunjuk bagian tertentu dari sebuah halaman atau resource. Misalnya langsung menuju bagian ulasan produk. Jadi intinya, URL bukan sekadar alamat website. Karena satu baris URL yang kelihatannya sederhana, sebenarnya punya banyak komponen yang bekerja dengan tugasnya masing-masing.",
+  "scenes": [
+    {
+      "text": "Alamat website punya struktur",
+      "voiceText": "Alamat website yang sering lu buka itu ternyata punya struktur dan fungsinya. Mari kita breakdown.",
+      "seconds": 4.9,
+      "motion": "browser-url-awaken",
+      "visual": {
+        "type": "url-story",
+        "mode": "hook",
+        "kicker": "BEDAH URL",
+        "caption": "Satu alamat, banyak komponen."
+      },
+      "audio": "/assets/struktur-url/voice/01.m4a"
+    },
+    {
+      "text": "Coba lihat URL ini",
+      "voiceText": "Misalnya, ada alamat website kayak gini. https://shop.example.com:8080/products/123?color=black&size=M#reviews.",
+      "seconds": 11.5,
+      "motion": "url-type-reveal",
+      "visual": {
+        "type": "url-story",
+        "mode": "full-url",
+        "kicker": "CONTOH ALAMAT",
+        "caption": "Semua bagian ini punya posisi dan fungsi."
+      },
+      "audio": "/assets/struktur-url/voice/02.m4a"
+    },
+    {
+      "text": "Bukan sekadar teks panjang",
+      "voiceText": "Kelihatannya cuma deretan teks panjang, kan? Padahal setiap bagiannya punya tugas sendiri.",
+      "seconds": 4.6,
+      "motion": "url-components-separate",
+      "visual": {
+        "type": "url-story",
+        "mode": "split",
+        "kicker": "7 BAGIAN URL",
+        "caption": "Kita pecah satu per satu."
+      },
+      "audio": "/assets/struktur-url/voice/03.m4a"
+    },
+    {
+      "text": "01 / Protocol atau Scheme",
+      "voiceText": "Pertama, Protocol atau Scheme. Bagian https://. Ini menentukan protokol yang digunakan untuk mengakses resource.",
+      "seconds": 6.2,
+      "motion": "protocol-packet-route",
+      "visual": {
+        "type": "url-story",
+        "mode": "protocol",
+        "kicker": "HTTPS://",
+        "caption": "Aturan komunikasi antara browser dan server."
+      },
+      "audio": "/assets/struktur-url/voice/04.m4a"
+    },
+    {
+      "text": "HTTPS melindungi koneksi",
+      "voiceText": "HTTP digunakan untuk komunikasi web, sedangkan HTTPS menggunakan koneksi yang dilindungi enkripsi TLS.",
+      "seconds": 5.9,
+      "motion": "tls-shield-pulse",
+      "visual": {
+        "type": "url-story",
+        "mode": "tls",
+        "kicker": "HTTP → HTTPS",
+        "caption": "TLS melindungi data saat dikirim melalui koneksi."
+      },
+      "audio": "/assets/struktur-url/voice/05.m4a"
+    },
+    {
+      "text": "02 / Subdomain",
+      "voiceText": "Kedua, Subdomain. Ini biasanya digunakan untuk memisahkan layanan atau bagian tertentu dari sebuah website.",
+      "seconds": 5.6,
+      "motion": "subdomain-branch-grow",
+      "visual": {
+        "type": "url-story",
+        "mode": "subdomain",
+        "kicker": "SHOP.",
+        "caption": "Satu domain bisa punya beberapa layanan."
+      },
+      "audio": "/assets/struktur-url/voice/06.m4a"
+    },
+    {
+      "text": "Blog dan toko, alamat berbeda",
+      "voiceText": "Misalnya blog.example.com untuk blog atau shop.example.com untuk toko online.",
+      "seconds": 4.4,
+      "motion": "service-route-switch",
+      "visual": {
+        "type": "url-story",
+        "mode": "subexamples",
+        "kicker": "CONTOH SUBDOMAIN",
+        "caption": "Awalan alamat mengarah ke bagian situs tertentu."
+      },
+      "audio": "/assets/struktur-url/voice/07.m4a"
+    },
+    {
+      "text": "03 / Domain",
+      "voiceText": "Ketiga, Domain. Bagian example.com. Ini adalah nama domain yang digunakan untuk mengidentifikasi alamat website.",
+      "seconds": 6.2,
+      "motion": "domain-name-resolve",
+      "visual": {
+        "type": "url-story",
+        "mode": "domain",
+        "kicker": "EXAMPLE.COM",
+        "caption": "Nama yang dipakai untuk mengenali situs."
+      },
+      "audio": "/assets/struktur-url/voice/08.m4a"
+    },
+    {
+      "text": "04 / Port",
+      "voiceText": "Keempat, Port. Port itu angka 8080 setelah tanda titik dua. Ini digunakan untuk menentukan layanan jaringan mana yang dituju pada sebuah server.",
+      "seconds": 8,
+      "motion": "port-socket-select",
+      "visual": {
+        "type": "url-story",
+        "mode": "port",
+        "kicker": ":8080",
+        "caption": "Di contoh ini, browser menuju port 8080."
+      },
+      "audio": "/assets/struktur-url/voice/09.m4a"
+    },
+    {
+      "text": "Port default biasanya tersembunyi",
+      "voiceText": "Secara default, HTTP menggunakan port 80, sedangkan HTTPS menggunakan port 443. Makanya angka port biasanya nggak kelihatan di URL yang kita buka sehari-hari.",
+      "seconds": 9.7,
+      "motion": "default-port-collapse",
+      "visual": {
+        "type": "url-story",
+        "mode": "defaults",
+        "kicker": "80 / 443",
+        "caption": "URL contoh memakai 8080 secara eksplisit."
+      },
+      "audio": "/assets/struktur-url/voice/10.m4a"
+    },
+    {
+      "text": "05 / Path",
+      "voiceText": "Kelima, Path. Bagian /products/123. Ini menunjukkan lokasi atau rute yang ingin diakses.",
+      "seconds": 6.1,
+      "motion": "path-route-draw",
+      "visual": {
+        "type": "url-story",
+        "mode": "path",
+        "kicker": "/PRODUCTS/123",
+        "caption": "Rute menuju halaman atau resource tertentu."
+      },
+      "audio": "/assets/struktur-url/voice/11.m4a"
+    },
+    {
+      "text": "Produk dengan ID 123",
+      "voiceText": "Misalnya halaman detail produk dengan ID 123.",
+      "seconds": 3.2,
+      "motion": "product-card-build",
+      "visual": {
+        "type": "url-story",
+        "mode": "product",
+        "kicker": "HALAMAN PRODUK",
+        "caption": "products → detail produk → ID 123"
+      },
+      "audio": "/assets/struktur-url/voice/12.m4a"
+    },
+    {
+      "text": "06 / Query Parameters",
+      "voiceText": "Keenam, Query Parameters. Bagian setelah tanda tanya. ?color=black&size=M. Ini digunakan untuk mengirimkan informasi tambahan melalui URL.",
+      "seconds": 8.3,
+      "motion": "query-pairs-unpack",
+      "visual": {
+        "type": "url-story",
+        "mode": "query",
+        "kicker": "? KEY = VALUE",
+        "caption": "Tanda ? memulai query; & memisahkan parameter."
+      },
+      "audio": "/assets/struktur-url/voice/13.m4a"
+    },
+    {
+      "text": "color = black · size = M",
+      "voiceText": "Dalam contoh ini, kita punya dua parameter, yaitu color bernilai black dan size bernilai M.",
+      "seconds": 4.8,
+      "motion": "parameter-values-lock",
+      "visual": {
+        "type": "url-story",
+        "mode": "params",
+        "kicker": "2 PARAMETER",
+        "caption": "Dua pasangan nama dan nilai."
+      },
+      "audio": "/assets/struktur-url/voice/14.m4a"
+    },
+    {
+      "text": "Filter mengubah URL",
+      "voiceText": "Makanya waktu lu membuka halaman pencarian atau menggunakan filter produk, URL-nya sering berubah.",
+      "seconds": 4.8,
+      "motion": "filter-url-update",
+      "visual": {
+        "type": "url-story",
+        "mode": "filter",
+        "kicker": "FILTER PRODUK",
+        "caption": "Pilihan pengguna ikut terbawa di URL."
+      },
+      "audio": "/assets/struktur-url/voice/15.m4a"
+    },
+    {
+      "text": "07 / Fragment",
+      "voiceText": "Ketujuh, Fragment. Bagian #reviews. Ini digunakan untuk menunjuk bagian tertentu dari sebuah halaman atau resource.",
+      "seconds": 6,
+      "motion": "fragment-anchor-target",
+      "visual": {
+        "type": "url-story",
+        "mode": "fragment",
+        "kicker": "#REVIEWS",
+        "caption": "Penanda posisi dalam halaman."
+      },
+      "audio": "/assets/struktur-url/voice/16.m4a"
+    },
+    {
+      "text": "Langsung ke bagian ulasan",
+      "voiceText": "Misalnya langsung menuju bagian ulasan produk.",
+      "seconds": 2.4,
+      "motion": "reviews-page-scroll",
+      "visual": {
+        "type": "url-story",
+        "mode": "scroll",
+        "kicker": "LOMPAT KE ULASAN",
+        "caption": "Halaman bergeser ke bagian reviews."
+      },
+      "audio": "/assets/struktur-url/voice/17.m4a"
+    },
+    {
+      "text": "URL punya tujuh tugas",
+      "voiceText": "Jadi intinya, URL bukan sekadar alamat website.",
+      "seconds": 2.8,
+      "motion": "seven-parts-assemble",
+      "visual": {
+        "type": "url-story",
+        "mode": "summary",
+        "kicker": "RANGKUMAN",
+        "caption": "Scheme · subdomain · domain · port · path · query · fragment"
+      },
+      "audio": "/assets/struktur-url/voice/18.m4a"
+    },
+    {
+      "text": "Satu baris, banyak fungsi",
+      "voiceText": "Karena satu baris URL yang kelihatannya sederhana, sebenarnya punya banyak komponen yang bekerja dengan tugasnya masing-masing.",
+      "seconds": 6,
+      "motion": "url-final-orbit",
+      "visual": {
+        "type": "url-story",
+        "mode": "ending",
+        "kicker": "SEKARANG LU TAHU",
+        "caption": "Setiap karakter penting punya peran."
+      },
+      "audio": "/assets/struktur-url/voice/19.m4a"
+    }
+  ]
+}

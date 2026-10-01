@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:03,920
+Kita akan breakdown apa itu concurrency. Mari kita bahas.
+
+2
+00:00:04,820 --> 00:00:08,260
+Misalnya, ada seribu orang yang lagi pesan makanan lewat aplikasi,
+
+3
+00:00:08,800 --> 00:00:11,460
+ada yang checkout, dan ada yang melakukan pembayaran.
+
+4
+00:00:12,080 --> 00:00:14,960
+Apakah semuanya harus nunggu satu per satu sampai selesai?
+
+5
+00:00:15,720 --> 00:00:18,700
+Nah, di sinilah ada konsep yang namanya concurrency.
+
+6
+00:00:19,340 --> 00:00:25,340
+Concurrency adalah kemampuan sistem untuk menangani beberapa pekerjaan dalam periode waktu yang bersamaan.
+
+7
+00:00:25,340 --> 00:00:28,380
+Biar gampang, kita pakai analogi.
+
+8
+00:00:28,840 --> 00:00:32,540
+Bayangin lu adalah seorang barista yang harus melayani tiga pelanggan.
+
+9
+00:00:32,980 --> 00:00:34,880
+Pelanggan pertama, pesan kopi.
+
+10
+00:00:35,440 --> 00:00:36,660
+Lu mulai bikin kopinya.
+
+11
+00:00:37,120 --> 00:00:40,480
+Tapi ternyata, lu harus nunggu mesin kopinya selesai bekerja.
+
+12
+00:00:41,280 --> 00:00:44,800
+Daripada bengong, lu langsung mengambil pesanan pelanggan kedua.
+
+13
+00:00:45,500 --> 00:00:48,920
+Sambil menunggu, lu juga menyiapkan gelas untuk pelanggan ketiga.
+
+14
+00:00:49,660 --> 00:00:53,560
+Begitu mesin kopi selesai, lu kembali menyelesaikan pesanan pertama.
+
+15
+00:00:53,560 --> 00:00:56,500
+Nah, itulah gambaran concurrency.
+
+16
+00:00:56,980 --> 00:01:02,960
+Satu barista bisa menangani beberapa pekerjaan dengan cara berpindah dari satu tugas ke tugas lainnya.
+
+17
+00:01:03,400 --> 00:01:05,900
+Terus implementasi di aplikasi gimana?
+
+18
+00:01:06,640 --> 00:01:08,780
+Misalnya, lu membuka aplikasi e-commerce.
+
+19
+00:01:09,500 --> 00:01:14,240
+Di saat yang hampir bersamaan, aplikasi itu perlu mengambil informasi produk,
+
+20
+00:01:14,640 --> 00:01:17,000
+mengecek stok dan memuat rekomendasi.
+
+21
+00:01:17,640 --> 00:01:20,500
+Kalau semua proses harus menunggu satu sama lain,
+
+22
+00:01:20,500 --> 00:01:23,040
+waktu tunggunya bisa lebih panjang.
+
+23
+00:01:23,420 --> 00:01:27,720
+Dengan concurrency, sistem bisa menangani beberapa operasi tersebut,
+
+24
+00:01:28,140 --> 00:01:30,760
+tanpa harus menunggu semuanya selesai secara berurutan.
+
+25
+00:01:31,540 --> 00:01:35,440
+Salah satu contohnya di JavaScript adalah penggunaan async/await
+
+26
+00:01:35,440 --> 00:01:38,120
+untuk mengelola operasi asynchronous.
+
+27
+00:01:38,760 --> 00:01:41,880
+Tapi perlu diingat, concurrency juga punya tantangan.
+
+28
+00:01:42,620 --> 00:01:46,600
+Misalnya, dua pengguna mencoba membeli barang yang stoknya tinggal satu.
+
+29
+00:01:47,120 --> 00:01:49,280
+Kalau prosesnya nggak diatur dengan benar,
+
+30
+00:01:49,280 --> 00:01:52,480
+keduanya bisa aja sama-sama dianggap berhasil.
+
+31
+00:01:53,160 --> 00:01:57,260
+Masalah seperti ini berkaitan dengan konsep yang namanya race condition.
+
+32
+00:01:58,160 --> 00:01:59,020
+Jadi intinya,
+
+33
+00:01:59,480 --> 00:02:04,600
+concurrency ini bukan berarti semua pekerjaan harus dieksekusi pada detik yang sama.
+
+34
+00:02:05,240 --> 00:02:09,420
+Tapi bagaimana sebuah sistem bisa mengelola banyak pekerjaan secara efisien
+
+35
+00:02:09,420 --> 00:02:12,860
+tanpa harus selalu menunggu satu pekerjaan selesai terlebih dahulu.

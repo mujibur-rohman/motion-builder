@@ -1,0 +1,20 @@
+{
+  "title": "Dari ide menjadi cerita",
+  "ratio": "9:16",
+  "script": "Semua cerita dimulai dari sebuah ide. Beri ide itu bentuk. Buat setiap detik terasa hidup. Lalu bagikan ceritamu.",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "accentDark": "#3946C6",
+    "line": "#404249",
+    "text": "#F2F3F5",
+    "font": "Avenir Next, Arial, sans-serif"
+  },
+  "scenes": [
+    { "text": "Semua cerita dimulai dari sebuah ide", "label": "Mulai", "seconds": 3.5, "motion": "title-rise", "visual": { "type": "statement", "accentWord": "ide", "kicker": "DARI IDE MENJADI CERITA" } },
+    { "text": "Beri ide itu bentuk", "label": "Bentuk", "seconds": 3, "motion": "card-stagger", "visual": { "type": "cards", "kicker": "LANGKAH 01", "items": [{ "icon": "✎", "title": "Tulis inti pesannya", "detail": "Satu gagasan yang mudah diingat" }, { "icon": "◈", "title": "Pilih visualnya", "detail": "Gambar mengikuti makna kalimat", "highlighted": true }] } },
+    { "text": "Buat setiap detik terasa hidup", "label": "Gerak", "seconds": 3.5, "motion": "flow-build", "visual": { "type": "flow", "kicker": "LANGKAH 02", "steps": ["Sketsa", "Gerak", "Poles"], "active": 1 } },
+    { "text": "Lalu bagikan ceritamu", "label": "Bagikan", "seconds": 3, "motion": "focus-pop", "visual": { "type": "focus", "keyword": "BAGIKAN", "kicker": "LANGKAH 03" } }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "title": "Bahas Tuntas Cookie",
+  "template": "cookie-story",
+  "ratio": "9:16",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "accentDark": "#3946C6",
+    "line": "#404249",
+    "text": "#F2F3F5"
+  },
+  "scenes": [
+    {
+      "text": "Kenapa website minta izin cookie?",
+      "voiceText": "Hampir semua website minta izin untuk menyimpan cookie, sebenernya untuk apa? Sini gua jelasin.",
+      "seconds": 5.1,
+      "motion": "consent-enter",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "consent",
+        "kicker": "BAHAS TUNTAS COOKIE",
+        "caption": "Pop-up ini muncul di banyak website."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/01.m4a"
+    },
+    {
+      "text": "Accept All Cookies",
+      "voiceText": "Lu pasti pernah ketika buka website, terus muncul pop-up yang tulisannya Accept All Cookies.",
+      "seconds": 4.7,
+      "motion": "accept-highlight",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "accept",
+        "kicker": "KETIKA BUKA WEBSITE",
+        "caption": "Satu tombol yang sering kita tekan cepat-cepat."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/02.m4a"
+    },
+    {
+      "text": "Website mengingat kunjungan lu",
+      "voiceText": "Jadi ini tujuannya untuk menyetujui website buat mengingat informasi tertentu tentang kunjungan lu.",
+      "seconds": 4.9,
+      "motion": "memory-transfer",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "remember",
+        "kicker": "APA YANG DISETUJUI?",
+        "caption": "Cookie adalah data kecil yang disimpan browser untuk website."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/03.m4a"
+    },
+    {
+      "text": "Bayangin sebuah coffee shop",
+      "voiceText": "Gampangnya gini. Bayangin lu datang ke sebuah coffee shop.",
+      "seconds": 3,
+      "motion": "cafe-sign-rise",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "cafe-new",
+        "kicker": "ANALOGI SEDERHANA",
+        "caption": "Pertemuan pertama."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/04.m4a"
+    },
+    {
+      "text": "Barista belum kenal lu",
+      "voiceText": "Pas pertama kali datang, baristanya belum kenal lu.",
+      "seconds": 2.7,
+      "motion": "first-visit-question",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "cafe-new",
+        "kicker": "KUNJUNGAN PERTAMA",
+        "caption": "Nama dan pesanan masih asing."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/05.m4a"
+    },
+    {
+      "text": "Nama dan pesanan mulai diingat",
+      "voiceText": "Tapi setelah beberapa kali datang, dia mulai ingat nama lu dan pesanan favorit lu.",
+      "seconds": 4.1,
+      "motion": "return-visit-card",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "cafe-return",
+        "kicker": "KUNJUNGAN BERIKUTNYA",
+        "caption": "“Seperti biasa, kopi favorit lu?”"
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/06.m4a"
+    },
+    {
+      "text": "Cookie bekerja mirip begitu",
+      "voiceText": "Nah, cookie bekerja dengan konsep yang mirip.",
+      "seconds": 2.5,
+      "motion": "analogy-morph",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "analogy",
+        "kicker": "DARI KAFE KE WEBSITE",
+        "caption": "Browser menyimpan penanda untuk website."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/07.m4a"
+    },
+    {
+      "text": "Contoh: lu login ke website",
+      "voiceText": "Contohnya waktu lu login ke sebuah website.",
+      "seconds": 2.4,
+      "motion": "login-form-rise",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "login",
+        "kicker": "CONTOH NYATA",
+        "caption": "Masukkan akun, lalu server memeriksa login."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/08.m4a"
+    },
+    {
+      "text": "Server memberi cookie berisi session ID",
+      "voiceText": "Setelah berhasil login, server bisa ngasih browser lu sebuah cookie yang berisi session ID.",
+      "seconds": 4.6,
+      "motion": "session-cookie-delivery",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "issue",
+        "kicker": "SETELAH LOGIN BERHASIL",
+        "caption": "Cookie membawa session ID, bukan password."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/09.m4a"
+    },
+    {
+      "text": "Session ID = kartu identitas sementara",
+      "voiceText": "Session ID ini ibarat kartu identitas sementara.",
+      "seconds": 2.8,
+      "motion": "id-card-tilt",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "identity",
+        "kicker": "SESSION ID",
+        "caption": "Penanda sesi yang dapat dicocokkan server."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/10.m4a"
+    },
+    {
+      "text": "Pindah halaman, cookie ikut terkirim",
+      "voiceText": "Setiap kali lu membuka halaman lain di website tersebut, browser bisa otomatis mengirimkan cookie yang sesuai ke server.",
+      "seconds": 5.8,
+      "motion": "request-cookie-travel",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "request",
+        "kicker": "SETIAP REQUEST YANG SESUAI",
+        "caption": "Browser mengirim cookie yang cocok dengan aturan website."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/11.m4a"
+    },
+    {
+      "text": "Server tahu lu sudah login",
+      "voiceText": "Jadi server tahu kalau lu adalah pengguna yang sudah login.",
+      "seconds": 2.9,
+      "motion": "server-check-success",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "verified",
+        "kicker": "HASILNYA",
+        "caption": "Server mencocokkan session ID dengan sesi aktif."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/12.m4a"
+    },
+    {
+      "text": "Cookie bukan cuma buat login",
+      "voiceText": "Tapi cookie nggak cuma buat login. Secara umum, ada beberapa penggunaan cookie.",
+      "seconds": 4.3,
+      "motion": "four-types-build",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "categories",
+        "kicker": "EMPAT PENGGUNAAN UMUM",
+        "caption": "Fungsinya berbeda-beda."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/13.m4a"
+    },
+    {
+      "text": "01 / Essential Cookies",
+      "voiceText": "Pertama, Essential Cookies. Digunakan untuk fungsi penting website, contohnya menjaga sesi login.",
+      "seconds": 5,
+      "motion": "essential-lock",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "essential",
+        "kicker": "KATEGORI 01",
+        "caption": "Fungsi inti, seperti mempertahankan sesi login."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/14.m4a"
+    },
+    {
+      "text": "02 / Preference Cookies",
+      "voiceText": "Kedua, Preference Cookies. Buat mengingat preferensi lu, misalnya bahasa atau pengaturan tampilan.",
+      "seconds": 4.9,
+      "motion": "preference-switch",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "preference",
+        "kicker": "KATEGORI 02",
+        "caption": "Bahasa dan tampilan sesuai pilihan lu."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/15.m4a"
+    },
+    {
+      "text": "03 / Analytics Cookies",
+      "voiceText": "Ketiga, Analytics Cookies. Membantu pemilik website memahami bagaimana pengunjung menggunakan websitenya.",
+      "seconds": 5.3,
+      "motion": "analytics-bars-rise",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "analytics",
+        "kicker": "KATEGORI 03",
+        "caption": "Pola penggunaan membantu evaluasi website."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/16.m4a"
+    },
+    {
+      "text": "04 / Advertising Cookies",
+      "voiceText": "Keempat, Advertising Cookies. Bisa dipakai untuk mengenali aktivitas pengguna dan mendukung personalisasi iklan.",
+      "seconds": 5.7,
+      "motion": "ad-target-reveal",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "advertising",
+        "kicker": "KATEGORI 04",
+        "caption": "Dapat mendukung iklan yang dipersonalisasi."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/17.m4a"
+    },
+    {
+      "text": "Di sini muncul pertanyaan privasi",
+      "voiceText": "Nah, kategori terakhir inilah yang sering menimbulkan pertanyaan soal privasi.",
+      "seconds": 3.9,
+      "motion": "privacy-question-pulse",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "privacy",
+        "kicker": "SOAL PRIVASI",
+        "caption": "Informasi aktivitas bisa menjadi sensitif."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/18.m4a"
+    },
+    {
+      "text": "Aktivitas bisa terlacak lintas website",
+      "voiceText": "Karena cookie tertentu bisa digunakan untuk melacak aktivitas lu, termasuk di beberapa website berbeda.",
+      "seconds": 5.2,
+      "motion": "cross-site-line-draw",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "cross-site",
+        "kicker": "PELACAKAN LINTAS SITUS",
+        "caption": "Terutama lewat layanan pihak ketiga yang dipakai beberapa situs."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/19.m4a"
+    },
+    {
+      "text": "Itulah alasan ada pop-up persetujuan",
+      "voiceText": "Makanya banyak website menampilkan pop-up persetujuan cookie.",
+      "seconds": 3.3,
+      "motion": "consent-options-slide",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "choices",
+        "kicker": "PILIHAN DI WEBSITE",
+        "caption": "Periksa kategori sebelum memilih."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/20.m4a"
+    },
+    {
+      "text": "Nggak semua cookie berbahaya",
+      "voiceText": "Tapi perlu diingat, nggak semua cookie berbahaya, dan nggak semua cookie digunakan buat tracking.",
+      "seconds": 4.7,
+      "motion": "nuance-balance",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "nuance",
+        "kicker": "YANG PERLU DIINGAT",
+        "caption": "Fungsi cookie bergantung pada tujuan penggunaannya."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/21.m4a"
+    },
+    {
+      "text": "Sekarang lu tahu apa yang diminta",
+      "voiceText": "Dan sekarang setiap kali muncul tombol Accept All Cookies, setidaknya lu udah tahu apa yang sebenarnya sedang diminta sama website tersebut.",
+      "seconds": 6.7,
+      "motion": "final-choice-focus",
+      "visual": {
+        "type": "cookie-story",
+        "mode": "ending",
+        "kicker": "LAIN KALI MUNCUL POP-UP",
+        "caption": "Pilih dengan tahu apa yang lu setujui."
+      },
+      "audio": "/assets/bahas-tuntas-cookie/voice/22.m4a"
+    }
+  ]
+}

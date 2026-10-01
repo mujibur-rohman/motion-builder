@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:05,360
+Ini full breakdown: cookie vs localStorage. Sini kita bahas.
+
+2
+00:00:05,360 --> 00:00:07,480
+Pertama, kita bahas cookie dulu.
+
+3
+00:00:07,480 --> 00:00:15,640
+Cookie adalah data kecil yang disimpan di browser dan bisa dikirim secara otomatis ke server melalui HTTP request.
+
+4
+00:00:15,640 --> 00:00:20,240
+Gampangnya gini, bayangin lu lagi nginep di hotel. Setelah check-in,
+
+5
+00:00:20,240 --> 00:00:25,800
+Resepsionis memberikan kartu kamar sebagai bukti kalau lu sudah terdaftar.
+
+6
+00:00:25,800 --> 00:00:33,120
+Jadi setiap kali lu mau mengakses fasilitas tertentu, kartu itu bisa digunakan untuk tanda pengenal.
+
+7
+00:00:33,120 --> 00:00:36,200
+Nah, cookie bekerja dengan konsep yang mirip.
+
+8
+00:00:36,200 --> 00:00:42,520
+Misalnya, ketika lu berhasil login, server itu bisa memberikan cookie berisi session ID.
+
+9
+00:00:42,520 --> 00:00:50,040
+Setiap kali browser mengirim request yang sesuai, cookie tadi bisa otomatis ikut dikirim ke server.
+
+10
+00:00:50,040 --> 00:00:53,320
+Jadi server bisa mengenali sesi login lu.
+
+11
+00:00:53,320 --> 00:00:56,960
+Tanpa harus meminta username dan password berulang kali.
+
+12
+00:00:56,960 --> 00:00:59,160
+Terus, localStorage itu apa?
+
+13
+00:00:59,160 --> 00:01:05,200
+localStorage adalah tempat penyimpanan data di browser yang bisa diakses melalui JavaScript.
+
+14
+00:01:05,200 --> 00:01:08,080
+Dan tidak otomatis dikirim ke server.
+
+15
+00:01:08,080 --> 00:01:13,200
+Contohnya, lu membuka website dan mengubah tampilannya dari light mode ke dark mode.
+
+16
+00:01:13,200 --> 00:01:17,240
+Website bisa menyimpan preferensi tersebut ke localStorage.
+
+17
+00:01:17,240 --> 00:01:22,440
+Jadi keesokannya, ketika lu membuka website yang sama, tampilannya tetap dark mode.
+
+18
+00:01:22,440 --> 00:01:23,880
+Nah, sekarang perbedaannya.
+
+19
+00:01:23,880 --> 00:01:25,800
+Pertama, pengiriman data.
+
+20
+00:01:25,800 --> 00:01:30,040
+Cookie bisa otomatis dikirim bersama HTTP request yang sesuai.
+
+21
+00:01:30,040 --> 00:01:32,360
+Sedangkan localStorage itu tidak.
+
+22
+00:01:32,360 --> 00:01:34,240
+Kedua, kapasitas.
+
+23
+00:01:34,240 --> 00:01:37,720
+Cookie biasanya dibatasi sekitar 4 KB per cookie.
+
+24
+00:01:37,720 --> 00:01:44,880
+Sedangkan localStorage umumnya menyediakan kapasitas beberapa MB per origin, tergantung browser.
+
+25
+00:01:44,880 --> 00:01:47,920
+Ketiga, yaitu masa penyimpanan.
+
+26
+00:01:47,920 --> 00:01:50,760
+Cookie bisa memiliki waktu kedaluwarsa.
+
+27
+00:01:50,760 --> 00:01:53,800
+Atau hanya bertahan selama sesi browser.
+
+28
+00:01:53,800 --> 00:02:01,040
+Sedangkan localStorage itu tetap tersimpan sampai dihapus oleh pengguna, aplikasi, atau kebijakan browser.
+
+29
+00:02:01,040 --> 00:02:08,000
+Jadi intinya, cookie ini cocok untuk data kecil yang perlu ikut ke dalam komunikasi HTTP dengan server.
+
+30
+00:02:08,000 --> 00:02:14,140
+Sedangkan localStorage cocok untuk menyimpan data yang ingin digunakan kembali oleh aplikasi di browser.

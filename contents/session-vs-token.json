@@ -1,0 +1,335 @@
+{
+  "title": "Session vs Token",
+  "ratio": "9:16",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "accentDark": "#3946C6",
+    "line": "#404249",
+    "text": "#F2F3F5",
+    "font": "Avenir Next, Arial, sans-serif"
+  },
+  "scenes": [
+    {
+      "text": "Session vs Token",
+      "voiceText": "Session versus Token. Misalnya lu login ke sebuah aplikasi pakai email dan password.",
+      "seconds": 4.4,
+      "motion": "compare-reveal",
+      "visual": {
+        "type": "compare",
+        "kicker": "CARA KERJA LOGIN",
+        "left": {
+          "icon": "▣",
+          "title": "Session",
+          "detail": "Client membawa ID"
+        },
+        "right": {
+          "icon": "◇",
+          "title": "Token",
+          "detail": "Client membawa bukti"
+        },
+        "active": -1
+      },
+      "audio": "/assets/session-vs-token/voice/01.m4a"
+    },
+    {
+      "text": "Login berhasil",
+      "voiceText": "Kalau aplikasi lu pakai session, setelah login berhasil, server bakal bikin data session untuk user dan nyimpen data itu di sisi server.",
+      "seconds": 6.8,
+      "motion": "session-record-return",
+      "visual": {
+        "type": "auth-diagram",
+        "kicker": "01 / SESSION",
+        "mode": "session-create",
+        "takeaway": "Server menyimpan data session"
+      },
+      "audio": "/assets/session-vs-token/voice/02.m4a"
+    },
+    {
+      "text": "Client cuma dapat session ID",
+      "voiceText": "Client cuma dikasih satu session ID, biasanya disimpan di cookie.",
+      "seconds": 3.7,
+      "motion": "focus-id-pop",
+      "visual": {
+        "type": "focus",
+        "kicker": "YANG DIBAWA BROWSER",
+        "keyword": "SESSION ID",
+        "note": "Biasanya disimpan di cookie"
+      },
+      "audio": "/assets/session-vs-token/voice/03.m4a"
+    },
+    {
+      "text": "Setiap halaman, ID dikirim lagi",
+      "voiceText": "Jadi setiap kali lu buka dashboard, profile, atau halaman lain, browser ngirim session ID tadi ke server.",
+      "seconds": 5.5,
+      "motion": "session-id-travel",
+      "visual": {
+        "type": "auth-diagram",
+        "kicker": "SETIAP REQUEST",
+        "mode": "session-request",
+        "takeaway": "Browser membawa ID, bukan data login"
+      },
+      "audio": "/assets/session-vs-token/voice/04.m4a"
+    },
+    {
+      "text": "Session ID ini punya siapa?",
+      "voiceText": "Server bakal ngecek: Session ID ini punya siapa? Oh, ini user A. Baru request lu diproses.",
+      "seconds": 5.2,
+      "motion": "lookup-stagger",
+      "visual": {
+        "type": "timeline",
+        "kicker": "SERVER MENGECEK",
+        "nodes": [
+          {
+            "id": "ID",
+            "title": "Cari session",
+            "detail": "Cocokkan ID dengan data di server"
+          },
+          {
+            "id": "A",
+            "title": "Ketemu user A",
+            "detail": "Identitas diketahui"
+          },
+          {
+            "id": "✓",
+            "title": "Proses request",
+            "detail": "Akses diberikan"
+          }
+        ],
+        "active": 1
+      },
+      "audio": "/assets/session-vs-token/voice/05.m4a"
+    },
+    {
+      "text": "Data login disimpan di server",
+      "voiceText": "Artinya, kalau pakai session, identitas dan status login user disimpan di server.",
+      "seconds": 4.3,
+      "motion": "server-focus",
+      "visual": {
+        "type": "focus",
+        "kicker": "INTI SESSION",
+        "keyword": "DI SERVER",
+        "note": "Client hanya menyimpan session ID"
+      },
+      "audio": "/assets/session-vs-token/voice/06.m4a"
+    },
+    {
+      "text": "Sekarang bandingin dengan token",
+      "voiceText": "Sekarang bandingin sama token. Setelah login berhasil, server ngasih client sebuah token. Contohnya JWT.",
+      "seconds": 5.7,
+      "motion": "jwt-issue-slide-right",
+      "visual": {
+        "type": "auth-diagram",
+        "kicker": "02 / TOKEN",
+        "mode": "token-issue",
+        "takeaway": "Client menerima token dari server"
+      },
+      "audio": "/assets/session-vs-token/voice/07.m4a"
+    },
+    {
+      "text": "Apa isi token?",
+      "voiceText": "Token ini bisa berisi informasi seperti user ID, role, dan waktu expired,",
+      "seconds": 4.2,
+      "motion": "claims-stagger",
+      "visual": {
+        "type": "cards",
+        "kicker": "CONTOH KLAIM JWT",
+        "items": [
+          {
+            "icon": "#",
+            "title": "User ID",
+            "detail": "Identitas user"
+          },
+          {
+            "icon": "◇",
+            "title": "Role",
+            "detail": "Hak akses"
+          },
+          {
+            "icon": "◷",
+            "title": "Expired",
+            "detail": "Batas waktu berlaku",
+            "highlighted": true
+          }
+        ]
+      },
+      "audio": "/assets/session-vs-token/voice/08.m4a"
+    },
+    {
+      "text": "Server menandatangani token",
+      "voiceText": "lalu ditandatangani server supaya isinya nggak bisa sembarangan dimodifikasi.",
+      "seconds": 3.9,
+      "motion": "signature-zoom",
+      "visual": {
+        "type": "terminal",
+        "kicker": "TANDA TANGAN DIGITAL",
+        "window": "token / verifikasi",
+        "lines": [
+          "HEADER . PAYLOAD . SIGNATURE",
+          "✓ signature dibuat server"
+        ],
+        "takeaway": "Perubahan isi akan gagal diverifikasi"
+      },
+      "audio": "/assets/session-vs-token/voice/09.m4a"
+    },
+    {
+      "text": "Client mengirim token tiap request",
+      "voiceText": "Setiap request, client bakal ngirim token itu.",
+      "seconds": 2.8,
+      "motion": "jwt-request-travel",
+      "visual": {
+        "type": "auth-diagram",
+        "kicker": "SETIAP REQUEST",
+        "mode": "token-request"
+      },
+      "audio": "/assets/session-vs-token/voice/10.m4a"
+    },
+    {
+      "text": "Server memverifikasi token",
+      "voiceText": "Server tinggal verifikasi: Token ini valid nggak? Sudah expired belum? Tandatangannya benar nggak?",
+      "seconds": 5.1,
+      "motion": "checks-stagger",
+      "visual": {
+        "type": "cards",
+        "kicker": "TIGA CEK UTAMA",
+        "items": [
+          {
+            "icon": "①",
+            "title": "Format valid?"
+          },
+          {
+            "icon": "②",
+            "title": "Belum expired?"
+          },
+          {
+            "icon": "③",
+            "title": "Signature benar?",
+            "highlighted": true
+          }
+        ]
+      },
+      "audio": "/assets/session-vs-token/voice/11.m4a"
+    },
+    {
+      "text": "Valid → request diproses",
+      "voiceText": "Kalau valid, request diproses.",
+      "seconds": 2.4,
+      "motion": "valid-focus-pop",
+      "visual": {
+        "type": "focus",
+        "kicker": "HASIL VERIFIKASI",
+        "keyword": "VALID ✓",
+        "note": "Request bisa diproses"
+      },
+      "audio": "/assets/session-vs-token/voice/12.m4a"
+    },
+    {
+      "text": "Beda paling gampang",
+      "voiceText": "Jadi perbedaan paling gampangnya: Session: server nyimpen data login, client bawa ID-nya. Token: client bawa bukti autentikasi yang bisa diverifikasi server.",
+      "seconds": 8.3,
+      "motion": "compare-core-slide-left",
+      "visual": {
+        "type": "compare",
+        "kicker": "RINGKASNYA",
+        "left": {
+          "icon": "▣",
+          "title": "Session",
+          "detail": "Server simpan data login. Client bawa ID."
+        },
+        "right": {
+          "icon": "◇",
+          "title": "Token",
+          "detail": "Client bawa bukti yang bisa diverifikasi."
+        },
+        "active": -1
+      },
+      "audio": "/assets/session-vs-token/voice/13.m4a"
+    },
+    {
+      "text": "Session nyaman untuk web tradisional",
+      "voiceText": "Makanya session sering nyaman dipakai untuk aplikasi web tradisional karena kontrol session ada di server.",
+      "seconds": 5.1,
+      "motion": "session-use-rise",
+      "visual": {
+        "type": "cards",
+        "kicker": "KAPAN SERING DIPAKAI",
+        "items": [
+          {
+            "icon": "▣",
+            "title": "Aplikasi web",
+            "detail": "Browser memakai cookie"
+          },
+          {
+            "icon": "●",
+            "title": "Kontrol di server",
+            "detail": "Session bisa diatur dari pusat",
+            "highlighted": true
+          }
+        ]
+      },
+      "audio": "/assets/session-vs-token/voice/14.m4a"
+    },
+    {
+      "text": "Token cocok untuk banyak client",
+      "voiceText": "Sedangkan token sering dipakai ketika aplikasi punya banyak client, misalnya web, mobile app, atau komunikasi antar-service.",
+      "seconds": 6.4,
+      "motion": "clients-stagger",
+      "visual": {
+        "type": "cards",
+        "kicker": "BANYAK JENIS CLIENT",
+        "items": [
+          {
+            "icon": "▣",
+            "title": "Web"
+          },
+          {
+            "icon": "▯",
+            "title": "Mobile app",
+            "highlighted": true
+          },
+          {
+            "icon": "↔",
+            "title": "Antar-service"
+          }
+        ]
+      },
+      "audio": "/assets/session-vs-token/voice/15.m4a"
+    },
+    {
+      "text": "Token bukan otomatis lebih aman",
+      "voiceText": "Tapi jangan salah. Token bukan otomatis lebih aman dari session, dan session juga bukan teknologi jadul.",
+      "seconds": 5.5,
+      "motion": "myth-compare-slide-right",
+      "visual": {
+        "type": "compare",
+        "kicker": "JANGAN SALAH PAHAM",
+        "left": {
+          "icon": "◇",
+          "title": "Token",
+          "detail": "Tidak otomatis lebih aman"
+        },
+        "right": {
+          "icon": "▣",
+          "title": "Session",
+          "detail": "Tetap relevan"
+        },
+        "active": -1
+      },
+      "audio": "/assets/session-vs-token/voice/16.m4a"
+    },
+    {
+      "text": "Keduanya bisa aman",
+      "voiceText": "Dua-duanya bisa aman kalau implementasinya benar.",
+      "seconds": 2.6,
+      "motion": "final-focus-pop",
+      "visual": {
+        "type": "focus",
+        "kicker": "INTINYA",
+        "keyword": "IMPLEMENTASI",
+        "note": "Keamanan bergantung pada cara pemakaian"
+      },
+      "audio": "/assets/session-vs-token/voice/17.m4a"
+    }
+  ]
+}

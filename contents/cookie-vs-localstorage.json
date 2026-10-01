@@ -1,0 +1,376 @@
+{
+  "title": "Cookie vs localStorage — Full Breakdown",
+  "template": "cookie-local-story",
+  "ratio": "9:16",
+  "audio": "/assets/cookie-vs-localstorage/narasi.mp3",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "accentDark": "#3946C6",
+    "line": "#404249",
+    "text": "#F2F3F5"
+  },
+  "scenes": [
+    {
+      "text": "Cookie vs localStorage",
+      "voiceText": "Ini full breakdown: cookie vs localStorage. Sini kita bahas.",
+      "seconds": 5.36,
+      "motion": "intro-01",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "intro",
+        "kicker": "DUA CARA MENYIMPAN DATA",
+        "caption": "Apa bedanya, kapan dipakai?"
+      }
+    },
+    {
+      "text": "Mulai dari cookie",
+      "voiceText": "Pertama, kita bahas cookie dulu.",
+      "seconds": 2.12,
+      "motion": "cookie-02",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "cookie",
+        "kicker": "01 / COOKIE",
+        "caption": "Data kecil di browser."
+      }
+    },
+    {
+      "text": "Data kecil yang ikut request",
+      "voiceText": "Cookie adalah data kecil yang disimpan di browser dan bisa dikirim secara otomatis ke server melalui HTTP request.",
+      "seconds": 8.16,
+      "motion": "cookie-definition-03",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "cookie-definition",
+        "kicker": "CARA KERJA COOKIE",
+        "caption": "Browser → HTTP request → server."
+      }
+    },
+    {
+      "text": "Bayangin check-in hotel",
+      "voiceText": "Gampangnya gini, bayangin lu lagi nginep di hotel. Setelah check-in,",
+      "seconds": 4.6,
+      "motion": "hotel-04",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "hotel",
+        "kicker": "ANALOGI HOTEL",
+        "caption": "Tamu datang dan mendaftar."
+      }
+    },
+    {
+      "text": "Dapat kartu kamar",
+      "voiceText": "Resepsionis memberikan kartu kamar sebagai bukti kalau lu sudah terdaftar.",
+      "seconds": 5.56,
+      "motion": "keycard-05",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "keycard",
+        "kicker": "BUKTI TERDAFTAR",
+        "caption": "Kartu diberikan setelah check-in."
+      }
+    },
+    {
+      "text": "Kartu jadi tanda pengenal",
+      "voiceText": "Jadi setiap kali lu mau mengakses fasilitas tertentu, kartu itu bisa digunakan untuk tanda pengenal.",
+      "seconds": 7.32,
+      "motion": "hotel-access-06",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "hotel-access",
+        "kicker": "SAAT MENGAKSES FASILITAS",
+        "caption": "Kartu diperiksa sebelum masuk."
+      }
+    },
+    {
+      "text": "Cookie mirip kartu itu",
+      "voiceText": "Nah, cookie bekerja dengan konsep yang mirip.",
+      "seconds": 3.08,
+      "motion": "analogy-07",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "analogy",
+        "kicker": "ANALOGI → WEB",
+        "caption": "Kartu kamar ≈ cookie sesi."
+      }
+    },
+    {
+      "text": "Login menghasilkan session ID",
+      "voiceText": "Misalnya, ketika lu berhasil login, server itu bisa memberikan cookie berisi session ID.",
+      "seconds": 6.32,
+      "motion": "issue-08",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "issue",
+        "kicker": "SETELAH LOGIN",
+        "caption": "Server mengeluarkan penanda sesi."
+      }
+    },
+    {
+      "text": "Cookie ikut terkirim",
+      "voiceText": "Setiap kali browser mengirim request yang sesuai, cookie tadi bisa otomatis ikut dikirim ke server.",
+      "seconds": 7.52,
+      "motion": "request-09",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "request",
+        "kicker": "REQUEST BERIKUTNYA",
+        "caption": "Cookie ikut pada request yang sesuai."
+      }
+    },
+    {
+      "text": "Server mengenali sesi",
+      "voiceText": "Jadi server bisa mengenali sesi login lu.",
+      "seconds": 3.28,
+      "motion": "recognized-10",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "recognized",
+        "kicker": "HASILNYA",
+        "caption": "Session ID dicocokkan di server."
+      }
+    },
+    {
+      "text": "Tidak perlu login ulang",
+      "voiceText": "Tanpa harus meminta username dan password berulang kali.",
+      "seconds": 3.64,
+      "motion": "password-11",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "password",
+        "kicker": "PENGALAMAN PENGGUNA",
+        "caption": "Akun tetap dikenali selama sesi valid."
+      }
+    },
+    {
+      "text": "Lalu, localStorage?",
+      "voiceText": "Terus, localStorage itu apa?",
+      "seconds": 2.2,
+      "motion": "local-intro-12",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "local-intro",
+        "kicker": "02 / LOCALSTORAGE",
+        "caption": "Penyimpanan di sisi browser."
+      }
+    },
+    {
+      "text": "Diakses lewat JavaScript",
+      "voiceText": "localStorage adalah tempat penyimpanan data di browser yang bisa diakses melalui JavaScript.",
+      "seconds": 6.04,
+      "motion": "local-definition-13",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "local-definition",
+        "kicker": "CARA KERJA LOCALSTORAGE",
+        "caption": "Aplikasi membaca dan menulis data."
+      }
+    },
+    {
+      "text": "Tidak otomatis ke server",
+      "voiceText": "Dan tidak otomatis dikirim ke server.",
+      "seconds": 2.88,
+      "motion": "no-auto-14",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "no-auto",
+        "kicker": "PERBEDAAN PENTING",
+        "caption": "Data tinggal di browser kecuali aplikasi mengirimnya."
+      }
+    },
+    {
+      "text": "Ubah light ke dark mode",
+      "voiceText": "Contohnya, lu membuka website dan mengubah tampilannya dari light mode ke dark mode.",
+      "seconds": 5.12,
+      "motion": "theme-switch-15",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "theme-switch",
+        "kicker": "CONTOH PREFERENSI",
+        "caption": "Pengguna memilih tampilan gelap."
+      }
+    },
+    {
+      "text": "Pilihan disimpan",
+      "voiceText": "Website bisa menyimpan preferensi tersebut ke localStorage.",
+      "seconds": 4.04,
+      "motion": "theme-save-16",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "theme-save",
+        "kicker": "SIMPAN DI BROWSER",
+        "caption": "theme = dark"
+      }
+    },
+    {
+      "text": "Besok tetap dark mode",
+      "voiceText": "Jadi keesokannya, ketika lu membuka website yang sama, tampilannya tetap dark mode.",
+      "seconds": 5.2,
+      "motion": "theme-return-17",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "theme-return",
+        "kicker": "KUNJUNGAN BERIKUTNYA",
+        "caption": "Aplikasi membaca pilihan yang tersimpan."
+      }
+    },
+    {
+      "text": "Sekarang perbedaannya",
+      "voiceText": "Nah, sekarang perbedaannya.",
+      "seconds": 1.44,
+      "motion": "compare-intro-18",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "compare-intro",
+        "kicker": "COOKIE VS LOCALSTORAGE",
+        "caption": "Tiga hal yang perlu diingat."
+      }
+    },
+    {
+      "text": "01 · Pengiriman data",
+      "voiceText": "Pertama, pengiriman data.",
+      "seconds": 1.92,
+      "motion": "compare-intro-19",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "compare-intro",
+        "kicker": "BEDA #1",
+        "caption": "Apakah data ikut request?"
+      }
+    },
+    {
+      "text": "Cookie ikut HTTP request",
+      "voiceText": "Cookie bisa otomatis dikirim bersama HTTP request yang sesuai.",
+      "seconds": 4.24,
+      "motion": "cookie-transfer-20",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "cookie-transfer",
+        "kicker": "COOKIE",
+        "caption": "Otomatis, jika aturan cookie cocok."
+      }
+    },
+    {
+      "text": "localStorage tidak ikut",
+      "voiceText": "Sedangkan localStorage itu tidak.",
+      "seconds": 2.32,
+      "motion": "local-transfer-21",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "local-transfer",
+        "kicker": "LOCALSTORAGE",
+        "caption": "Perlu kode aplikasi untuk mengirimnya."
+      }
+    },
+    {
+      "text": "02 · Kapasitas",
+      "voiceText": "Kedua, kapasitas.",
+      "seconds": 1.88,
+      "motion": "capacity-intro-22",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "capacity-intro",
+        "kicker": "BEDA #2",
+        "caption": "Berapa banyak yang dapat disimpan?"
+      }
+    },
+    {
+      "text": "Cookie sekitar 4 KB",
+      "voiceText": "Cookie biasanya dibatasi sekitar 4 KB per cookie.",
+      "seconds": 3.48,
+      "motion": "cookie-size-23",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "cookie-size",
+        "kicker": "COOKIE",
+        "caption": "Kapasitas kecil per cookie."
+      }
+    },
+    {
+      "text": "localStorage beberapa MB",
+      "voiceText": "Sedangkan localStorage umumnya menyediakan kapasitas beberapa MB per origin, tergantung browser.",
+      "seconds": 7.16,
+      "motion": "local-size-24",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "local-size",
+        "kicker": "LOCALSTORAGE",
+        "caption": "Batas nyata bergantung browser."
+      }
+    },
+    {
+      "text": "03 · Masa penyimpanan",
+      "voiceText": "Ketiga, yaitu masa penyimpanan.",
+      "seconds": 3.04,
+      "motion": "expiry-intro-25",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "expiry-intro",
+        "kicker": "BEDA #3",
+        "caption": "Kapan data hilang?"
+      }
+    },
+    {
+      "text": "Cookie bisa kedaluwarsa",
+      "voiceText": "Cookie bisa memiliki waktu kedaluwarsa.",
+      "seconds": 2.84,
+      "motion": "cookie-expiry-26",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "cookie-expiry",
+        "kicker": "COOKIE",
+        "caption": "Expires / Max-Age."
+      }
+    },
+    {
+      "text": "Atau selama sesi",
+      "voiceText": "Atau hanya bertahan selama sesi browser.",
+      "seconds": 3.04,
+      "motion": "session-expiry-27",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "session-expiry",
+        "kicker": "SESSION COOKIE",
+        "caption": "Hilang saat sesi browser berakhir."
+      }
+    },
+    {
+      "text": "localStorage tetap tersimpan",
+      "voiceText": "Sedangkan localStorage itu tetap tersimpan sampai dihapus oleh pengguna, aplikasi, atau kebijakan browser.",
+      "seconds": 7.24,
+      "motion": "local-persist-28",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "local-persist",
+        "kicker": "LOCALSTORAGE",
+        "caption": "Tetap ada hingga dihapus."
+      }
+    },
+    {
+      "text": "Cookie untuk komunikasi HTTP",
+      "voiceText": "Jadi intinya, cookie ini cocok untuk data kecil yang perlu ikut ke dalam komunikasi HTTP dengan server.",
+      "seconds": 6.96,
+      "motion": "cookie-final-29",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "cookie-final",
+        "kicker": "PILIH COOKIE JIKA…",
+        "caption": "Data kecil perlu menyertai request yang sesuai."
+      }
+    },
+    {
+      "text": "localStorage untuk aplikasi browser",
+      "voiceText": "Sedangkan localStorage cocok untuk menyimpan data yang ingin digunakan kembali oleh aplikasi di browser.",
+      "seconds": 6.14,
+      "motion": "local-final-30",
+      "visual": {
+        "type": "cookie-local-story",
+        "mode": "local-final",
+        "kicker": "PILIH LOCALSTORAGE JIKA…",
+        "caption": "Data dipakai lagi di sisi browser."
+      }
+    }
+  ]
+}

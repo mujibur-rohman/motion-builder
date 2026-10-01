@@ -1,0 +1,171 @@
+{
+  "title": "Kenapa Iklan Sepatu Mengikuti Kita?",
+  "template": "cross-app-tracking",
+  "ratio": "9:16",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "accentDark": "#3946C6",
+    "line": "#404249",
+    "text": "#F2F3F5"
+  },
+  "scenes": [
+    {
+      "text": "Baru cari sepatu di e-commerce…",
+      "voiceText": "Lu pernah ga si ngalamin ketika lu lagi nyari produk di ecommerce, misalnya Shopee atau Tokopedia?",
+      "seconds": 4.8,
+      "motion": "search-type-and-products-rise",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "search",
+        "kicker": "01 / PENCARIAN",
+        "caption": "Ketik produk yang lagi lu incar."
+      },
+      "audio": "/assets/cross-app-tracking/voice/01.m4a"
+    },
+    {
+      "text": "…lalu iklannya muncul di sosmed?",
+      "voiceText": "Terus beberapa menit kemudian lu buka sosmed, kadang ada iklan yang related dengan produk yang kita cari.",
+      "seconds": 4.9,
+      "motion": "social-feed-ad-reveal",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "social-ad",
+        "kicker": "02 / IKLAN",
+        "caption": "Produk serupa muncul sebagai iklan di feed."
+      },
+      "audio": "/assets/cross-app-tracking/voice/02.m4a"
+    },
+    {
+      "text": "HP kita nguping?",
+      "voiceText": "Banyak yang ngira kalo HP kita tuh bisa nguping.",
+      "seconds": 2.5,
+      "motion": "microphone-wobble-and-cross",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "microphone",
+        "kicker": "DUGAAN POPULER",
+        "caption": "Belum tentu. Ada penjelasan teknis lain."
+      },
+      "audio": "/assets/cross-app-tracking/voice/03.m4a"
+    },
+    {
+      "text": "Namanya cross-app tracking",
+      "voiceText": "Padahal salah satu teknik yang bisa menjelaskannya tuh namanya cross app tracking.",
+      "seconds": 4,
+      "motion": "cross-app-packet-travel",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "cross-app",
+        "kicker": "CARA KERJANYA",
+        "caption": "Aktivitas pada satu aplikasi dapat dipakai untuk penargetan di aplikasi lain."
+      },
+      "audio": "/assets/cross-app-tracking/voice/04.m4a"
+    },
+    {
+      "text": "Ada ID iklan di perangkat",
+      "voiceText": "Jadi setiap HP itu bisa punya kode iklan unik, semacam KTP untuk kebutuhan iklan.",
+      "seconds": 4.6,
+      "motion": "device-id-card-tilt",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "device-id",
+        "kicker": "IDENTITAS IKLAN",
+        "caption": "ID iklan bisa direset atau dibatasi melalui pengaturan perangkat."
+      },
+      "audio": "/assets/cross-app-tracking/voice/05.m4a"
+    },
+    {
+      "text": "Android: GAID · iPhone: IDFA",
+      "voiceText": "Di Android sering disebut GAID, kalau di iPhone namanya IDFA.",
+      "seconds": 3,
+      "motion": "platform-id-pair-slide",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "id-types",
+        "kicker": "DUA NAMA ID",
+        "caption": "Akses ke IDFA di iPhone memerlukan izin tracking pengguna."
+      },
+      "audio": "/assets/cross-app-tracking/voice/06.m4a"
+    },
+    {
+      "text": "Bagaimana aplikasi saling tahu?",
+      "voiceText": "Terus gimana caranya sosial media semacam Instagram tahu apa yang lu cari di aplikasi belanja? Salah satu caranya, aplikasi bisa memakai SDK dari pihak lain.",
+      "seconds": 8.1,
+      "motion": "sdk-module-insert-and-pulse",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "sdk",
+        "kicker": "KOMPONEN DI DALAM APP",
+        "caption": "SDK adalah komponen kode. Integrasi setiap aplikasi bisa berbeda."
+      },
+      "audio": "/assets/cross-app-tracking/voice/07.m4a"
+    },
+    {
+      "text": "Cari sepatu, belum checkout",
+      "voiceText": "Misalnya lu lagi nyari sepatu seharga dua ratus ribu, tapi belum checkout.",
+      "seconds": 3.8,
+      "motion": "product-event-fields-build",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "product-event",
+        "kicker": "CONTOH EVENT",
+        "caption": "Pencarian, harga, dan status checkout menjadi sinyal minat."
+      },
+      "audio": "/assets/cross-app-tracking/voice/08.m4a"
+    },
+    {
+      "text": "Sinyalnya dikirim ke server iklan",
+      "voiceText": "Komponen tadi bisa melaporkan event itu ke server iklan, beserta identitas iklan yang tersedia.",
+      "seconds": 4.7,
+      "motion": "event-packet-to-server",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "report",
+        "kicker": "PENGIRIMAN SINYAL",
+        "caption": "Ini contoh alur, bukan pernyataan tentang integrasi Shopee atau Meta saat ini."
+      },
+      "audio": "/assets/cross-app-tracking/voice/09.m4a"
+    },
+    {
+      "text": "ID itu cocok dengan User A",
+      "voiceText": "Server lalu mencocokkan identitas iklan itu dengan profil iklan yang sudah dikenal. Oh, ternyata ini User A.",
+      "seconds": 5.6,
+      "motion": "identity-match-line-grow",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "match",
+        "kicker": "PENCOCOKAN",
+        "caption": "Pencocokan bisa memakai berbagai sinyal dan bergantung pada izin pengguna."
+      },
+      "audio": "/assets/cross-app-tracking/voice/10.m4a"
+    },
+    {
+      "text": "Algoritma memilih iklan relevan",
+      "voiceText": "Setelah menerima sinyal itu, algoritmanya mencari iklan yang paling cocok untuk user ini.",
+      "seconds": 4.6,
+      "motion": "ad-candidates-rank",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "rank",
+        "kicker": "PEMILIHAN IKLAN",
+        "caption": "Minat sepatu membuat iklan sepatu lebih relevan."
+      },
+      "audio": "/assets/cross-app-tracking/voice/11.m4a"
+    },
+    {
+      "text": "Makanya iklan sepatu bisa muncul",
+      "voiceText": "Makanya beberapa menit kemudian, iklan sepatu bisa muncul di sosial media lu.",
+      "seconds": 4,
+      "motion": "final-feed-ad-pulse",
+      "visual": {
+        "type": "tracking-story",
+        "mode": "result",
+        "kicker": "HASILNYA",
+        "caption": "Alur ini ilustratif. Tidak semua iklan serupa berasal dari cross-app tracking."
+      },
+      "audio": "/assets/cross-app-tracking/voice/12.m4a"
+    }
+  ]
+}

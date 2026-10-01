@@ -1,0 +1,68 @@
+{
+  "title": "Style demo — Git vs GitHub",
+  "ratio": "9:16",
+  "scenes": [
+    {
+      "text": "Git dan GitHub beda tugas",
+      "seconds": 2.8,
+      "motion": "title-rise",
+      "visual": { "type": "statement", "kicker": "GIT VS GITHUB", "accentWord": "beda" }
+    },
+    {
+      "text": "Satu mencatat, satu menyimpan online",
+      "seconds": 3.2,
+      "motion": "compare-slide-left",
+      "visual": {
+        "type": "compare",
+        "kicker": "DUA PERAN",
+        "left": { "icon": "◈", "title": "Git", "detail": "History di project" },
+        "right": { "icon": "☁", "title": "GitHub", "detail": "Repository online" }
+      }
+    },
+    {
+      "text": "Git merekam perubahan kode",
+      "seconds": 3.2,
+      "motion": "cards-stagger",
+      "visual": {
+        "type": "cards",
+        "kicker": "DI LAPTOP LU",
+        "items": [
+          { "icon": "①", "title": "Edit file", "detail": "Kerjakan fitur atau perbaikan" },
+          { "icon": "②", "title": "Bikin commit", "detail": "Simpan checkpoint", "highlighted": true },
+          { "icon": "③", "title": "Lihat history", "detail": "Tahu perubahan sebelumnya" }
+        ]
+      }
+    },
+    {
+      "text": "Bikin checkpoint sebelum eksperimen",
+      "seconds": 3.2,
+      "motion": "terminal-type",
+      "visual": {
+        "type": "terminal",
+        "kicker": "CONTOH NYATA",
+        "window": "project / terminal",
+        "lines": ["$ git add .", "$ git commit -m \"login beres\"", "✓ checkpoint tersimpan"],
+        "takeaway": "Sekarang ada jalan untuk balik"
+      }
+    },
+    {
+      "text": "Alur kerja paling sederhana",
+      "seconds": 3.2,
+      "motion": "flow-build",
+      "visual": { "type": "flow", "kicker": "WORKFLOW", "steps": ["Edit", "Commit", "Push"], "active": 1, "takeaway": "Push mengirim repository ke GitHub" }
+    },
+    {
+      "text": "GitHub menyimpan repository online",
+      "seconds": 3.2,
+      "motion": "image-zoom",
+      "image": "/assets/git-vs-github/cloud-2d.png",
+      "visual": { "type": "image", "kicker": "DI CLOUD" }
+    },
+    {
+      "text": "Sebelum AI ubah banyak file, commit dulu",
+      "seconds": 3.2,
+      "motion": "focus-pop",
+      "visual": { "type": "focus", "kicker": "INGAT INI", "keyword": "SAVE POINT" }
+    }
+  ]
+}

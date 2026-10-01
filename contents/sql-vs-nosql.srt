@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:03,360
+Ini full breakdown, database SQL dan NoSQL
+
+2
+00:00:03,360 --> 00:00:05,300
+Mari kita bahas
+
+3
+00:00:05,920 --> 00:00:07,500
+Pertama kita bahas SQL dulu
+
+4
+00:00:08,160 --> 00:00:11,320
+SQL biasanya menggunakan database relasional
+
+5
+00:00:11,320 --> 00:00:14,700
+Artinya data itu disusun dalam bentuk tabel
+
+6
+00:00:14,700 --> 00:00:19,040
+Misalnya lu punya tabel user, ada kolom id, name dan email
+
+7
+00:00:19,640 --> 00:00:21,160
+Terus ada juga tabel order
+
+8
+00:00:21,160 --> 00:00:24,500
+Yang isinya id, user id, dan total
+
+9
+00:00:25,120 --> 00:00:29,120
+Kedua tabel ini bisa saling berhubungan lewat yang namanya relasi
+
+10
+00:00:30,000 --> 00:00:33,860
+Gampangnya gini, SQL itu kaya lemari arsip yang sangat rapi
+
+11
+00:00:34,400 --> 00:00:37,740
+Setiap dokumen punya tempat dan format yang sudah jelas
+
+12
+00:00:38,360 --> 00:00:42,540
+Kalo satu formulir harus punya nama, email, dan nomor telepon
+
+13
+00:00:42,540 --> 00:00:46,260
+Semua datanya itu mengikuti struktur yang sudah ditentukan
+
+14
+00:00:46,880 --> 00:00:50,780
+Contohnya ada PostgreSQL, MySQL, dan SQL server
+
+15
+00:00:51,400 --> 00:00:52,960
+Terus kalo NoSQL gimana?
+
+16
+00:00:53,700 --> 00:00:58,800
+NoSQL adalah kelompok database yang tidak menggunakan model tabel seperti SQL
+
+17
+00:00:59,520 --> 00:01:02,880
+Salah satu bentuk yang paling populer adalah dokumen database
+
+18
+00:01:03,680 --> 00:01:07,160
+Misalnya data user bisa disimpan seperti objek JSON
+
+19
+00:01:07,160 --> 00:01:10,080
+Satu user mungkin punya nama, email, dan alamat
+
+20
+00:01:10,080 --> 00:01:16,220
+Tapi user lain itu bisa punya field tambahan seperti foto, sosial media, atau preferensi
+
+21
+00:01:16,880 --> 00:01:18,520
+Strukturnya bisa lebih fleksibel
+
+22
+00:01:19,560 --> 00:01:23,200
+Analoginya NoSQL itu seperti kumpulan kotak penyimpanan
+
+23
+00:01:23,200 --> 00:01:27,660
+Setiap kotak itu punya isi yang sedikit berbeda sesuai kebutuhan
+
+24
+00:01:28,220 --> 00:01:31,560
+Contoh database NoSQL yang terkenal adalah MongoDB
+
+25
+00:01:32,290 --> 00:01:34,720
+Terus pertanyaannya, mana yang lebih bagus?
+
+26
+00:01:35,400 --> 00:01:41,600
+Sebenarnya bukan soal mana yang lebih bagus, tapi mana yang lebih cocok untuk kebutuhan aplikasi lu
+
+27
+00:01:42,190 --> 00:01:47,020
+Kalo datanya punya struktur yang jelas, banyak relasi, dan butuh transaksi yang kuat
+
+28
+00:01:47,020 --> 00:01:49,060
+SQL sering jadi pilihan
+
+29
+00:01:49,470 --> 00:01:54,480
+Kalo struktur datanya sangat fleksibel, pola aksesnya cocok dengan model NoSQL
+
+30
+00:01:54,480 --> 00:01:57,340
+Atau sistemnya punya kebutuhan distribusi tertentu
+
+31
+00:01:57,660 --> 00:01:59,440
+NoSQL bisa jadi pilihan

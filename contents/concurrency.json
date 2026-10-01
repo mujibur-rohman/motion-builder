@@ -1,0 +1,339 @@
+{
+  "title": "Concurrency — Breakdown 2D",
+  "template": "concurrency-story",
+  "ratio": "9:16",
+  "audio": "/assets/concurrency/narasi.mp3",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "line": "#404249",
+    "text": "#F2F3F5"
+  },
+  "scenes": [
+    {
+      "text": "Concurrency itu apa?",
+      "voiceText": "Kita akan breakdown apa itu concurrency. Mari kita bahas.",
+      "seconds": 4.83333,
+      "motion": "intro-01",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "intro",
+        "kicker": "MEMAHAMI CONCURRENCY",
+        "caption": "Banyak pekerjaan, satu periode waktu."
+      }
+    },
+    {
+      "text": "Banyak orang, banyak aktivitas",
+      "voiceText": "Misalnya, ada seribu orang yang lagi pesan makanan lewat aplikasi, ada yang checkout, dan ada yang melakukan pembayaran.",
+      "seconds": 7.23333,
+      "motion": "orders-02",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "orders",
+        "kicker": "CONTOH APLIKASI",
+        "caption": "Pesan · checkout · bayar"
+      }
+    },
+    {
+      "text": "Harus antre satu per satu?",
+      "voiceText": "Apakah semuanya harus nunggu satu per satu sampai selesai?",
+      "seconds": 3.66667,
+      "motion": "queue-03",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "queue",
+        "kicker": "PERTANYAAN",
+        "caption": "Bagaimana aplikasi merespons semuanya?"
+      }
+    },
+    {
+      "text": "Inilah concurrency",
+      "voiceText": "Nah, di sinilah ada konsep yang namanya concurrency.",
+      "seconds": 3.6,
+      "motion": "intro-04",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "intro",
+        "kicker": "KONSEP UTAMA",
+        "caption": "Menangani beberapa pekerjaan."
+      }
+    },
+    {
+      "text": "Menangani banyak pekerjaan",
+      "voiceText": "Concurrency adalah kemampuan sistem untuk menangani beberapa pekerjaan dalam periode waktu yang bersamaan.",
+      "seconds": 6.0,
+      "motion": "definition-05",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "definition",
+        "kicker": "DEFINISI",
+        "caption": "Pekerjaan dapat berlangsung saling tumpang tindih."
+      }
+    },
+    {
+      "text": "Bayangkan sebuah kedai kopi",
+      "voiceText": "Biar gampang, kita pakai analogi.",
+      "seconds": 3.5,
+      "motion": "cafe-06",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "cafe",
+        "kicker": "ANALOGI",
+        "caption": "Satu barista. Tiga pelanggan."
+      }
+    },
+    {
+      "text": "Satu barista, tiga pelanggan",
+      "voiceText": "Bayangin lu adalah seorang barista yang harus melayani tiga pelanggan.",
+      "seconds": 4.13333,
+      "motion": "barista-07",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "barista",
+        "kicker": "ANALOGI BARISTA",
+        "caption": "Pelanggan A · B · C"
+      }
+    },
+    {
+      "text": "Pelanggan A pesan kopi",
+      "voiceText": "Pelanggan pertama pesan kopi. Lu mulai bikin kopinya.",
+      "seconds": 4.16667,
+      "motion": "coffee-start-08",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "coffee-start",
+        "kicker": "TUGAS A",
+        "caption": "Pesanan pertama mulai dikerjakan."
+      }
+    },
+    {
+      "text": "Mesin kopi sedang bekerja",
+      "voiceText": "Tapi ternyata lu harus nunggu mesin kopinya selesai bekerja.",
+      "seconds": 4.13333,
+      "motion": "machine-wait-09",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "machine-wait",
+        "kicker": "TUGAS A MENUNGGU",
+        "caption": "Barista punya waktu untuk tugas lain."
+      }
+    },
+    {
+      "text": "Barista melayani B",
+      "voiceText": "Daripada bengong, lu langsung mengambil pesanan pelanggan kedua.",
+      "seconds": 4.23333,
+      "motion": "serve-b-10",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "serve-b",
+        "kicker": "PINDAH KE TUGAS B",
+        "caption": "Menunggu mesin sambil mencatat pesanan."
+      }
+    },
+    {
+      "text": "Lalu menyiapkan gelas C",
+      "voiceText": "Sambil menunggu, lu juga menyiapkan gelas untuk pelanggan ketiga.",
+      "seconds": 4.16667,
+      "motion": "serve-c-11",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "serve-c",
+        "kicker": "PINDAH KE TUGAS C",
+        "caption": "Pekerjaan lain tetap maju."
+      }
+    },
+    {
+      "text": "Kembali selesaikan A",
+      "voiceText": "Begitu mesin kopi selesai, lu kembali menyelesaikan pesanan pertama.",
+      "seconds": 3.9,
+      "motion": "finish-a-12",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "finish-a",
+        "kicker": "KEMBALI KE TUGAS A",
+        "caption": "Kopi siap diserahkan."
+      }
+    },
+    {
+      "text": "Itulah concurrency",
+      "voiceText": "Nah, itulah gambaran concurrency.",
+      "seconds": 3.4,
+      "motion": "definition-13",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "definition",
+        "kicker": "INTI ANALOGI",
+        "caption": "Berganti tugas ketika ada waktu tunggu."
+      }
+    },
+    {
+      "text": "Satu barista, beberapa tugas",
+      "voiceText": "Satu barista bisa menangani beberapa pekerjaan dengan cara berpindah dari satu tugas ke tugas lainnya.",
+      "seconds": 6.43333,
+      "motion": "switching-14",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "switching",
+        "kicker": "CARA KERJANYA",
+        "caption": "A → B → C → A"
+      }
+    },
+    {
+      "text": "Bagaimana di aplikasi?",
+      "voiceText": "Terus implementasi di aplikasi gimana?",
+      "seconds": 3.23333,
+      "motion": "app-intro-15",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "app-intro",
+        "kicker": "DARI KEDAI KE APLIKASI",
+        "caption": "Alur yang sama juga muncul di software."
+      }
+    },
+    {
+      "text": "Buka aplikasi e-commerce",
+      "voiceText": "Misalnya lu membuka aplikasi e-commerce.",
+      "seconds": 2.86667,
+      "motion": "shop-16",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "shop",
+        "kicker": "CONTOH E-COMMERCE",
+        "caption": "Satu halaman membutuhkan banyak data."
+      }
+    },
+    {
+      "text": "Ambil informasi produk",
+      "voiceText": "Di saat yang hampir bersamaan, aplikasi itu perlu mengambil informasi produk,",
+      "seconds": 5.13333,
+      "motion": "product-17",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "product",
+        "kicker": "OPERASI 01",
+        "caption": "Detail produk mulai dimuat."
+      }
+    },
+    {
+      "text": "Cek stok dan rekomendasi",
+      "voiceText": "Mengecek stok dan memuat rekomendasi.",
+      "seconds": 3.0,
+      "motion": "three-requests-18",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "three-requests",
+        "kicker": "OPERASI 02 + 03",
+        "caption": "Tiga operasi untuk satu tampilan."
+      }
+    },
+    {
+      "text": "Jika semuanya menunggu",
+      "voiceText": "Kalau semua proses harus menunggu satu sama lain, waktu tunggunya bisa lebih panjang.",
+      "seconds": 5.8,
+      "motion": "sequential-19",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "sequential",
+        "kicker": "CARA BERURUTAN",
+        "caption": "Total tunggu mengikuti seluruh antrean."
+      }
+    },
+    {
+      "text": "Operasi bisa tumpang tindih",
+      "voiceText": "Dengan concurrency, sistem bisa menangani beberapa operasi tersebut tanpa harus menunggu semuanya selesai secara berurutan.",
+      "seconds": 8.1,
+      "motion": "parallel-20",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "parallel",
+        "kicker": "CARA CONCURRENT",
+        "caption": "Tugas maju saat tugas lain menunggu I/O."
+      }
+    },
+    {
+      "text": "Contoh: async/await",
+      "voiceText": "Salah satu contohnya di JavaScript adalah penggunaan async/await untuk mengelola operasi asynchronous.",
+      "seconds": 7.23333,
+      "motion": "async-21",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "async",
+        "kicker": "DI JAVASCRIPT",
+        "caption": "await menunggu hasil; tugas lain dapat berjalan."
+      }
+    },
+    {
+      "text": "Ada tantangannya juga",
+      "voiceText": "Tapi perlu diingat, concurrency juga punya tantangan.",
+      "seconds": 3.86667,
+      "motion": "warning-22",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "warning",
+        "kicker": "PERLU DIATUR",
+        "caption": "Data bersama harus tetap konsisten."
+      }
+    },
+    {
+      "text": "Stok tinggal satu",
+      "voiceText": "Misalnya dua pengguna mencoba membeli barang yang stoknya tinggal satu.",
+      "seconds": 4.5,
+      "motion": "last-stock-23",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "last-stock",
+        "kicker": "CONTOH STOK",
+        "caption": "Dua pembeli mengincar satu barang."
+      }
+    },
+    {
+      "text": "Keduanya merasa berhasil?",
+      "voiceText": "Kalau prosesnya nggak diatur dengan benar, keduanya bisa aja sama-sama dianggap berhasil.",
+      "seconds": 6.03333,
+      "motion": "collision-24",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "collision",
+        "kicker": "TANPA PENGAMAN",
+        "caption": "Dua checkout membaca stok yang sama."
+      }
+    },
+    {
+      "text": "Ini race condition",
+      "voiceText": "Masalah seperti ini berkaitan dengan konsep yang namanya race condition.",
+      "seconds": 5.0,
+      "motion": "race-25",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "race",
+        "kicker": "RACE CONDITION",
+        "caption": "Hasil bergantung pada urutan akses data bersama."
+      }
+    },
+    {
+      "text": "Bukan harus di detik yang sama",
+      "voiceText": "Jadi intinya, concurrency ini bukan berarti semua pekerjaan harus dieksekusi pada detik yang sama.",
+      "seconds": 7.06667,
+      "motion": "not-simultaneous-26",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "not-simultaneous",
+        "kicker": "KESIMPULAN",
+        "caption": "Concurrent ≠ semua dieksekusi serentak."
+      }
+    },
+    {
+      "text": "Kelola pekerjaan lebih efisien",
+      "voiceText": "Tapi bagaimana sebuah sistem bisa mengelola banyak pekerjaan secara efisien tanpa harus selalu menunggu satu pekerjaan selesai terlebih dahulu.",
+      "seconds": 8.16667,
+      "motion": "ending-27",
+      "visual": {
+        "type": "concurrency-story",
+        "mode": "ending",
+        "kicker": "KESIMPULAN",
+        "caption": "Pakai waktu tunggu untuk membuat tugas lain maju."
+      }
+    }
+  ]
+}
