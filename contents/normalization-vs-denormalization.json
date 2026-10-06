@@ -1,0 +1,255 @@
+{
+  "title": "Normalization vs Denormalization — Motion 2D",
+  "template": "normalization-story",
+  "ratio": "9:16",
+  "audio": "/assets/normalization-vs-denormalization/narasi.mp3",
+  "theme": {
+    "background": "#171B22",
+    "surface": "#252C38",
+    "accent": "#8BA4FF",
+    "line": "#415064",
+    "text": "#F4F7FB"
+  },
+  "scenes": [
+    {
+      "text": "Normalization vs Denormalization",
+      "voiceText": "Ini full breakdown normalization dan denormalization database. Sini kita bahas.",
+      "seconds": 6.333333333333333,
+      "motion": "intro-animated-01",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "intro",
+        "kicker": "DUA CARA MENYUSUN DATA",
+        "caption": "Struktur rapi atau baca cepat?"
+      }
+    },
+    {
+      "text": "Kenapa tabelnya banyak?",
+      "voiceText": "Pernah nggak lo lihat database yang datanya dipisah ke banyak tabel? Ada tabel users, orders, products, dan order items.",
+      "seconds": 8.8,
+      "motion": "many-tables-animated-02",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "many-tables",
+        "kicker": "PERTANYAAN AWAL",
+        "caption": "users · orders · products · order_items"
+      }
+    },
+    {
+      "text": "Kenapa tidak satu tabel?",
+      "voiceText": "Terus kepikiran, kenapa nggak digabungin aja semuanya jadi satu tabel biar gampang?",
+      "seconds": 5.866666666666666,
+      "motion": "giant-table-animated-03",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "giant-table",
+        "kicker": "TERLIHAT LEBIH MUDAH",
+        "caption": "Satu tabel justru menyimpan banyak pengulangan."
+      }
+    },
+    {
+      "text": "Dua pendekatan",
+      "voiceText": "Nah, ini ada hubungannya sama dua konsep, yaitu normalization dan denormalization.",
+      "seconds": 5.366666666666666,
+      "motion": "concept-animated-04",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "concept",
+        "kicker": "KONSEP DASAR",
+        "caption": "Normalization ↔ Denormalization"
+      }
+    },
+    {
+      "text": "Data rapi, duplikasi berkurang",
+      "voiceText": "Normalization adalah proses menyusun data supaya lebih terstruktur dan mengurangi duplikasi.",
+      "seconds": 6.766666666666667,
+      "motion": "normalization-animated-05",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "normalization",
+        "kicker": "NORMALIZATION",
+        "caption": "Pisahkan data menurut perannya."
+      }
+    },
+    {
+      "text": "Satu tabel pesanan",
+      "voiceText": "Contohnya kayak gini. Misalnya lo punya tabel pesanan, isinya ada nama customer, email customer, nama produk, harga produk, dan jumlah.",
+      "seconds": 9.366666666666667,
+      "motion": "order-table-animated-06",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "order-table",
+        "kicker": "CONTOH PESANAN",
+        "caption": "Customer · email · produk · harga · jumlah"
+      }
+    },
+    {
+      "text": "Customer sama, data berulang",
+      "voiceText": "Kalau customer yang sama beli lima kali, nama dan emailnya bisa ikut tersimpan lima kali.",
+      "seconds": 6.3,
+      "motion": "duplicates-animated-07",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "duplicates",
+        "kicker": "MASALAH DUPLIKASI",
+        "caption": "Nama dan email tersimpan berkali-kali."
+      }
+    },
+    {
+      "text": "Pecah data ke tabel terpisah",
+      "voiceText": "Nah, lewat normalization, data tadi kita pecah. Data customer masuk ke tabel users,",
+      "seconds": 5.2,
+      "motion": "split-start-animated-08",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "split-start",
+        "kicker": "SOLUSI NORMALIZATION",
+        "caption": "Satu sumber untuk tiap jenis data."
+      }
+    },
+    {
+      "text": "Setiap data punya tempat",
+      "voiceText": "data product masuk ke products, pesanan ke orders, dan detail barang yang dibeli masuk ke order items.",
+      "seconds": 8.966666666666667,
+      "motion": "split-routing-animated-09",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "split-routing",
+        "kicker": "TABEL YANG JELAS",
+        "caption": "users · products · orders · order_items"
+      }
+    },
+    {
+      "text": "Tabel dihubungkan dengan ID",
+      "voiceText": "Semua tabel itu dihubungkan menggunakan ID. Keuntungannya data ini lebih konsisten, tapi ada satu trade off.",
+      "seconds": 9.0,
+      "motion": "linked-animated-10",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "linked",
+        "kicker": "RELASI ANTARTABEL",
+        "caption": "ID menjaga data saling terhubung."
+      }
+    },
+    {
+      "text": "Membaca lengkap butuh JOIN",
+      "voiceText": "Karena datanya dipisah ke banyak tabel, saat ingin membaca informasi lengkap, database perlu melakukan yang namanya join.",
+      "seconds": 8.4,
+      "motion": "join-animated-11",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "join",
+        "kicker": "TRADE OFF",
+        "caption": "Beberapa tabel perlu digabung saat dibaca."
+      }
+    },
+    {
+      "text": "Denormalization: sengaja menduplikasi",
+      "voiceText": "Sekarang denormalization. Denormalization adalah ketika kita sengaja menyimpan data yang redundan atau menggabungkan sebagian data untuk mempermudah atau mempercepat proses baca.",
+      "seconds": 11.2,
+      "motion": "denorm-animated-12",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "denorm",
+        "kicker": "DENORMALIZATION",
+        "caption": "Data redundan dipakai untuk mempercepat baca."
+      }
+    },
+    {
+      "text": "Nama customer ikut di order",
+      "voiceText": "Misalnya di tabel order kita ikut menyimpan customer name, padahal nama tersebut sebenarnya sudah ada di tabel users.",
+      "seconds": 7.566666666666666,
+      "motion": "store-name-animated-13",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "store-name",
+        "kicker": "CONTOH PRAKTIS",
+        "caption": "orders menyimpan customer_name."
+      }
+    },
+    {
+      "text": "Kenapa sengaja ada duplikat?",
+      "voiceText": "Kenapa sengaja bikin data duplikat? Karena di beberapa kasus, kecepatan membaca data itu lebih penting daripada menghindari duplikasi.",
+      "seconds": 8.366666666666667,
+      "motion": "why-copy-animated-14",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "why-copy",
+        "kicker": "ALASANNYA",
+        "caption": "Kecepatan baca bisa jadi prioritas."
+      }
+    },
+    {
+      "text": "Jutaan pembacaan, hasil siap pakai",
+      "voiceText": "Misalnya dashboard yang dibuka jutaan kali. Daripada setiap request harus menghitung atau join banyak data, kita bisa menyimpan hasil yang sudah siap dibaca.",
+      "seconds": 10.0,
+      "motion": "dashboard-animated-15",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "dashboard",
+        "kicker": "KASUS DASHBOARD",
+        "caption": "Baca data siap tampil tanpa JOIN berulang."
+      }
+    },
+    {
+      "text": "Data sama di beberapa tempat",
+      "voiceText": "Tapi konsekuensinya, kita punya data yang sama di beberapa tempat.",
+      "seconds": 5.033333333333333,
+      "motion": "multiple-copies-animated-16",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "multiple-copies",
+        "kicker": "KONSEKUENSI",
+        "caption": "Ada beberapa salinan data yang sama."
+      }
+    },
+    {
+      "text": "Perubahan harus sinkron",
+      "voiceText": "Kalau satu data berubah, kita harus memastikan salinannya juga tetap sinkron.",
+      "seconds": 5.033333333333333,
+      "motion": "sync-animated-17",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "sync",
+        "kicker": "UPDATE DATA",
+        "caption": "Semua salinan perlu ikut berubah."
+      }
+    },
+    {
+      "text": "Jika gagal, data berbeda",
+      "voiceText": "Kalau tidak, bisa muncul data yang tidak konsisten. Jadi perbedaannya sederhana.",
+      "seconds": 5.1,
+      "motion": "inconsistent-animated-18",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "inconsistent",
+        "kicker": "RISIKO",
+        "caption": "Nilai yang berbeda menimbulkan inkonsistensi."
+      }
+    },
+    {
+      "text": "Normalization: lebih rapi",
+      "voiceText": "Normalization mengurangi duplikasi dan menjaga data tetap rapi.",
+      "seconds": 5.033333333333333,
+      "motion": "norm-summary-animated-19",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "norm-summary",
+        "kicker": "RANGKUMAN",
+        "caption": "Kurangi duplikasi · jaga konsistensi"
+      }
+    },
+    {
+      "text": "Denormalization: baca lebih cepat",
+      "voiceText": "Sedangkan denormalization menerima sebagian duplikasi demi performa atau kemudahan membaca data.",
+      "seconds": 5.966666666666667,
+      "motion": "denorm-summary-animated-20",
+      "visual": {
+        "type": "normalization-story",
+        "mode": "denorm-summary",
+        "kicker": "RANGKUMAN",
+        "caption": "Terima sebagian duplikasi demi performa."
+      }
+    }
+  ]
+}

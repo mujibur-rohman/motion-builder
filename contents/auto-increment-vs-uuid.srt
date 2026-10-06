@@ -1,0 +1,115 @@
+1
+00:00:00,000 --> 00:00:07,190
+Ini full breakdown auto increment ID versus UUID. Mari kita bahas.
+
+2
+00:00:07,190 --> 00:00:10,870
+Pernah nggak lo lihat ID database angka kayak gini?
+
+3
+00:00:10,870 --> 00:00:14,610
+Terus di aplikasi lain, ID-nya malah kayak gini.
+
+4
+00:00:14,610 --> 00:00:18,270
+Kenapa ada yang simpel banget, tapi ada juga yang panjang?
+
+5
+00:00:18,270 --> 00:00:20,730
+Kita mulai dari auto increment ID.
+
+6
+00:00:20,730 --> 00:00:27,810
+Auto increment adalah ID berbentuk angka yang nilainya naik otomatis setiap ada data baru.
+
+7
+00:00:27,810 --> 00:00:34,950
+Misalnya, user pertama dapat ID satu, user kedua dapat ID dua, dan seterusnya.
+
+8
+00:00:34,950 --> 00:00:37,310
+Kelebihannya cukup simpel.
+
+9
+00:00:37,310 --> 00:00:43,570
+Ukuran datanya kecil, gampang dibaca manusia, dan biasanya efisien untuk indeks database.
+
+10
+00:00:43,570 --> 00:00:45,310
+Tapi ada kekurangannya.
+
+11
+00:00:45,310 --> 00:00:49,710
+Karena urutannya berurutan, ID-nya itu gampang sekali ditebak.
+
+12
+00:00:49,710 --> 00:00:54,890
+Kalau URL seperti ini, misalkan slash user slash seratus.
+
+13
+00:00:54,890 --> 00:00:59,730
+Nah, orang bisa aja mencoba slash user slash seratus satu.
+
+14
+00:00:59,730 --> 00:01:04,830
+Tapi perlu diingat, ini bukan berarti auto increment itu otomatis nggak aman.
+
+15
+00:01:04,830 --> 00:01:09,410
+Security tetap harus ditangani lewat authentication dan authorization.
+
+16
+00:01:09,410 --> 00:01:16,790
+Masalah lainnya muncul kalau sistem lo itu punya banyak database atau banyak server yang sama-sama membuat data.
+
+17
+00:01:16,790 --> 00:01:21,910
+Karena lo harus memastikan dua tempat berbeda nggak menghasilkan ID yang sama.
+
+18
+00:01:21,910 --> 00:01:24,890
+Nah, di sinilah UUID sering digunakan.
+
+19
+00:01:24,890 --> 00:01:29,870
+UUID adalah singkatan dari Universally Unique Identifier.
+
+20
+00:01:29,870 --> 00:01:32,650
+Bentuknya biasanya panjang seperti ini.
+
+21
+00:01:32,650 --> 00:01:37,450
+UUID dirancang supaya kemungkinan dua ID yang sama itu sangat kecil.
+
+22
+00:01:37,450 --> 00:01:41,230
+Bahkan kalau ID-nya dibuat sama mesin atau server yang berbeda.
+
+23
+00:01:41,230 --> 00:01:45,150
+Analoginya gini, auto increment itu kayak nomor antrean.
+
+24
+00:01:45,150 --> 00:01:48,310
+Orang pertama nomor satu, berikutnya dua, dan seterusnya.
+
+25
+00:01:48,310 --> 00:01:54,090
+UUID itu lebih kayak nomor identitas yang bisa dibuat dari banyak tempat.
+
+26
+00:01:54,090 --> 00:01:58,530
+Makanya UUID ini cocok untuk sistem yang terdistribusi.
+
+27
+00:01:58,530 --> 00:02:05,430
+Misalnya aplikasi lo punya beberapa server, atau data dibuat dari banyak lokasi.
+
+28
+00:02:05,430 --> 00:02:09,410
+Jadi intinya auto increment itu unggul di kesederhanaan.
+
+29
+00:02:09,410 --> 00:02:13,533
+UUID menang di fleksibilitas untuk sistem yang terdistribusi.

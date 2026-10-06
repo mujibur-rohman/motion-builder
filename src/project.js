@@ -1,5 +1,5 @@
 export const FPS = 30;
-export const VISUAL_TYPES = ['statement', 'compare', 'cards', 'terminal', 'flow', 'focus', 'image', 'timeline', 'auth-diagram', 'tracking-story', 'cookie-story', 'url-story', 'cookie-local-story', 'concurrency-story', 'sql-nosql-story'];
+export const VISUAL_TYPES = ['statement', 'compare', 'cards', 'terminal', 'flow', 'focus', 'image', 'timeline', 'auth-diagram', 'tracking-story', 'cookie-story', 'url-story', 'cookie-local-story', 'concurrency-story', 'sql-nosql-story', 'id-story', 'normalization-story'];
 
 export function validateProject(project) {
   const errors = [];
@@ -29,6 +29,7 @@ export function validateProject(project) {
         if (visual.type === 'cookie-story' && !['consent', 'accept', 'remember', 'cafe-new', 'cafe-return', 'analogy', 'login', 'issue', 'identity', 'request', 'verified', 'categories', 'essential', 'preference', 'analytics', 'advertising', 'privacy', 'cross-site', 'choices', 'nuance', 'ending'].includes(visual.mode)) errors.push(`${prefix}.visual.mode cookie-story tidak dikenal.`);
         if (visual.type === 'url-story' && !['hook', 'full-url', 'split', 'protocol', 'tls', 'subdomain', 'subexamples', 'domain', 'port', 'defaults', 'path', 'product', 'query', 'params', 'filter', 'fragment', 'scroll', 'summary', 'ending'].includes(visual.mode)) errors.push(`${prefix}.visual.mode url-story tidak dikenal.`);
         if (visual.type === 'cookie-local-story' && !['intro', 'cookie', 'cookie-definition', 'hotel', 'keycard', 'hotel-access', 'analogy', 'login', 'issue', 'request', 'recognized', 'password', 'local-intro', 'local-definition', 'no-auto', 'theme-switch', 'theme-save', 'theme-return', 'compare-intro', 'cookie-transfer', 'local-transfer', 'capacity-intro', 'cookie-size', 'local-size', 'expiry-intro', 'cookie-expiry', 'session-expiry', 'local-persist', 'cookie-final', 'local-final'].includes(visual.mode)) errors.push(`${prefix}.visual.mode cookie-local-story tidak dikenal.`);
+        if (visual.type === 'id-story' && !['intro','number-id','uuid-id','question','auto-intro','auto-definition','sequence','simple','benefits','drawback','guess','url-100','url-101','not-insecure','security','distributed','collision','uuid-intro','uuid-definition','uuid-shape','uniqueness','different-servers','queue-analogy','queue-numbers','identity-analogy','distributed-fit','many-servers','auto-summary','uuid-summary'].includes(visual.mode)) errors.push(`${prefix}.visual.mode id-story tidak dikenal.`);
       }
     }
   }

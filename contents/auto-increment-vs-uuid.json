@@ -1,0 +1,363 @@
+{
+  "title": "Auto Increment ID vs UUID — Breakdown 2D",
+  "template": "id-story",
+  "ratio": "9:16",
+  "audio": "/assets/auto-increment-vs-uuid/narasi.mp3",
+  "theme": {
+    "background": "#1E1F22",
+    "surface": "#2B2D31",
+    "accent": "#5865F2",
+    "line": "#404249",
+    "text": "#F2F3F5"
+  },
+  "scenes": [
+    {
+      "text": "Auto Increment vs UUID",
+      "voiceText": "Ini full breakdown auto increment ID versus UUID. Mari kita bahas.",
+      "seconds": 7.2,
+      "motion": "intro-01",
+      "visual": {
+        "type": "id-story",
+        "mode": "intro",
+        "kicker": "DUA CARA MEMBUAT ID",
+        "caption": "Dua strategi penomoran data."
+      }
+    },
+    {
+      "text": "ID angka yang familiar",
+      "voiceText": "Pernah nggak lo lihat ID database angka kayak gini?",
+      "seconds": 3.6666666666666665,
+      "motion": "number-id-02",
+      "visual": {
+        "type": "id-story",
+        "mode": "number-id",
+        "kicker": "CONTOH PERTAMA",
+        "caption": "user_id: 1, 2, 3…"
+      }
+    },
+    {
+      "text": "ID panjang di aplikasi lain",
+      "voiceText": "Terus di aplikasi lain, ID-nya malah kayak gini.",
+      "seconds": 3.7333333333333334,
+      "motion": "uuid-id-03",
+      "visual": {
+        "type": "id-story",
+        "mode": "uuid-id",
+        "kicker": "CONTOH KEDUA",
+        "caption": "UUID berbentuk rangkaian karakter panjang."
+      }
+    },
+    {
+      "text": "Kenapa bentuknya beda?",
+      "voiceText": "Kenapa ada yang simpel banget, tapi ada juga yang panjang?",
+      "seconds": 3.6666666666666665,
+      "motion": "question-04",
+      "visual": {
+        "type": "id-story",
+        "mode": "question",
+        "kicker": "PERTANYAAN UTAMA",
+        "caption": "Bentuk ID mengikuti kebutuhan sistem."
+      }
+    },
+    {
+      "text": "Mulai dari auto increment",
+      "voiceText": "Kita mulai dari auto increment ID.",
+      "seconds": 2.466666666666667,
+      "motion": "auto-intro-05",
+      "visual": {
+        "type": "id-story",
+        "mode": "auto-intro",
+        "kicker": "AUTO INCREMENT",
+        "caption": "Angka bertambah otomatis."
+      }
+    },
+    {
+      "text": "Setiap data baru, angka naik",
+      "voiceText": "Auto increment adalah ID berbentuk angka yang nilainya naik otomatis setiap ada data baru.",
+      "seconds": 7.066666666666666,
+      "motion": "auto-definition-06",
+      "visual": {
+        "type": "id-story",
+        "mode": "auto-definition",
+        "kicker": "CARA KERJA",
+        "caption": "Satu baris baru → nomor berikutnya."
+      }
+    },
+    {
+      "text": "User 1 → ID 1, user 2 → ID 2",
+      "voiceText": "Misalnya, user pertama dapat ID satu, user kedua dapat ID dua, dan seterusnya.",
+      "seconds": 7.133333333333334,
+      "motion": "sequence-07",
+      "visual": {
+        "type": "id-story",
+        "mode": "sequence",
+        "kicker": "CONTOH DATA USER",
+        "caption": "Nomor mengikuti urutan penambahan data."
+      }
+    },
+    {
+      "text": "Kelebihannya: simpel",
+      "voiceText": "Kelebihannya cukup simpel.",
+      "seconds": 2.3666666666666667,
+      "motion": "simple-08",
+      "visual": {
+        "type": "id-story",
+        "mode": "simple",
+        "kicker": "KELEBIHAN",
+        "caption": "Mudah dipahami saat melihat data."
+      }
+    },
+    {
+      "text": "Kecil, terbaca, efisien",
+      "voiceText": "Ukuran datanya kecil, gampang dibaca manusia, dan biasanya efisien untuk indeks database.",
+      "seconds": 6.266666666666667,
+      "motion": "benefits-09",
+      "visual": {
+        "type": "id-story",
+        "mode": "benefits",
+        "kicker": "TIGA KELEBIHAN",
+        "caption": "Ukuran kecil · terbaca · indeks efisien."
+      }
+    },
+    {
+      "text": "Tetap ada kekurangan",
+      "voiceText": "Tapi ada kekurangannya.",
+      "seconds": 1.7333333333333334,
+      "motion": "drawback-10",
+      "visual": {
+        "type": "id-story",
+        "mode": "drawback",
+        "kicker": "SISI LAIN",
+        "caption": "Urutan mudah diprediksi."
+      }
+    },
+    {
+      "text": "ID berurutan mudah ditebak",
+      "voiceText": "Karena urutannya berurutan, ID-nya itu gampang sekali ditebak.",
+      "seconds": 4.4,
+      "motion": "guess-11",
+      "visual": {
+        "type": "id-story",
+        "mode": "guess",
+        "kicker": "RISIKO PREDIKSI",
+        "caption": "Angka berikutnya bisa dicoba."
+      }
+    },
+    {
+      "text": "/user/100",
+      "voiceText": "Kalau URL seperti ini, misalkan slash user slash seratus.",
+      "seconds": 5.2,
+      "motion": "url-100-12",
+      "visual": {
+        "type": "id-story",
+        "mode": "url-100",
+        "kicker": "CONTOH URL",
+        "caption": "Akun dengan ID 100."
+      }
+    },
+    {
+      "text": "Lalu mencoba /user/101",
+      "voiceText": "Nah, orang bisa aja mencoba slash user slash seratus satu.",
+      "seconds": 4.833333333333333,
+      "motion": "url-101-13",
+      "visual": {
+        "type": "id-story",
+        "mode": "url-101",
+        "kicker": "ANGKA BERIKUTNYA",
+        "caption": "Tebakan ID bukan izin akses."
+      }
+    },
+    {
+      "text": "Auto increment tidak otomatis tidak aman",
+      "voiceText": "Tapi perlu diingat, ini bukan berarti auto increment itu otomatis nggak aman.",
+      "seconds": 5.1,
+      "motion": "not-insecure-14",
+      "visual": {
+        "type": "id-story",
+        "mode": "not-insecure",
+        "kicker": "CATATAN PENTING",
+        "caption": "ID yang mudah ditebak tidak otomatis membocorkan data."
+      }
+    },
+    {
+      "text": "Keamanan ada di kontrol akses",
+      "voiceText": "Security tetap harus ditangani lewat authentication dan authorization.",
+      "seconds": 4.566666666666666,
+      "motion": "security-15",
+      "visual": {
+        "type": "id-story",
+        "mode": "security",
+        "kicker": "LAPISAN KEAMANAN",
+        "caption": "Pastikan siapa pengguna dan apa yang boleh diakses."
+      }
+    },
+    {
+      "text": "Bagaimana kalau banyak server?",
+      "voiceText": "Masalah lainnya muncul kalau sistem lo itu punya banyak database atau banyak server yang sama-sama membuat data.",
+      "seconds": 7.4,
+      "motion": "distributed-16",
+      "visual": {
+        "type": "id-story",
+        "mode": "distributed",
+        "kicker": "SISTEM TERDISTRIBUSI",
+        "caption": "Beberapa tempat membuat ID secara bersamaan."
+      }
+    },
+    {
+      "text": "Jangan sampai ID bentrok",
+      "voiceText": "Karena lo harus memastikan dua tempat berbeda nggak menghasilkan ID yang sama.",
+      "seconds": 5.1,
+      "motion": "collision-17",
+      "visual": {
+        "type": "id-story",
+        "mode": "collision",
+        "kicker": "TANTANGAN KOORDINASI",
+        "caption": "Dua server bisa memilih nomor yang sama."
+      }
+    },
+    {
+      "text": "Di sinilah UUID dipakai",
+      "voiceText": "Nah, di sinilah UUID sering digunakan.",
+      "seconds": 3.0,
+      "motion": "uuid-intro-18",
+      "visual": {
+        "type": "id-story",
+        "mode": "uuid-intro",
+        "kicker": "ALTERNATIF",
+        "caption": "ID bisa dibuat di banyak tempat."
+      }
+    },
+    {
+      "text": "Universally Unique Identifier",
+      "voiceText": "UUID adalah singkatan dari Universally Unique Identifier.",
+      "seconds": 4.966666666666667,
+      "motion": "uuid-definition-19",
+      "visual": {
+        "type": "id-story",
+        "mode": "uuid-definition",
+        "kicker": "KEPANJANGAN UUID",
+        "caption": "Universally Unique Identifier."
+      }
+    },
+    {
+      "text": "Bentuknya lebih panjang",
+      "voiceText": "Bentuknya biasanya panjang seperti ini.",
+      "seconds": 2.8,
+      "motion": "uuid-shape-20",
+      "visual": {
+        "type": "id-story",
+        "mode": "uuid-shape",
+        "kicker": "FORMAT ID",
+        "caption": "Contoh: 550e8400-e29b-41d4-a716-446655440000"
+      }
+    },
+    {
+      "text": "Tabrakan ID sangat kecil",
+      "voiceText": "UUID dirancang supaya kemungkinan dua ID yang sama itu sangat kecil.",
+      "seconds": 4.8,
+      "motion": "uniqueness-21",
+      "visual": {
+        "type": "id-story",
+        "mode": "uniqueness",
+        "kicker": "TUJUAN DESAIN",
+        "caption": "Peluang tabrakan sangat kecil."
+      }
+    },
+    {
+      "text": "Walau servernya berbeda",
+      "voiceText": "Bahkan kalau ID-nya dibuat sama mesin atau server yang berbeda.",
+      "seconds": 3.7666666666666666,
+      "motion": "different-servers-22",
+      "visual": {
+        "type": "id-story",
+        "mode": "different-servers",
+        "kicker": "TANPA NOMOR PUSAT",
+        "caption": "Setiap server bisa membuat UUID sendiri."
+      }
+    },
+    {
+      "text": "Auto increment = nomor antrean",
+      "voiceText": "Analoginya gini, auto increment itu kayak nomor antrean.",
+      "seconds": 3.9,
+      "motion": "queue-analogy-23",
+      "visual": {
+        "type": "id-story",
+        "mode": "queue-analogy",
+        "kicker": "ANALOGI",
+        "caption": "Nomor dikeluarkan berurutan."
+      }
+    },
+    {
+      "text": "Antrean: 1, 2, 3…",
+      "voiceText": "Orang pertama nomor satu, berikutnya dua, dan seterusnya.",
+      "seconds": 3.1666666666666665,
+      "motion": "queue-numbers-24",
+      "visual": {
+        "type": "id-story",
+        "mode": "queue-numbers",
+        "kicker": "SATU LOKET",
+        "caption": "Nomor berikutnya mengikuti nomor sebelumnya."
+      }
+    },
+    {
+      "text": "UUID = identitas dari banyak tempat",
+      "voiceText": "UUID itu lebih kayak nomor identitas yang bisa dibuat dari banyak tempat.",
+      "seconds": 5.8,
+      "motion": "identity-analogy-25",
+      "visual": {
+        "type": "id-story",
+        "mode": "identity-analogy",
+        "kicker": "BANYAK LOKASI",
+        "caption": "Identitas dibuat tanpa antre pada satu loket."
+      }
+    },
+    {
+      "text": "Cocok untuk sistem terdistribusi",
+      "voiceText": "Makanya UUID ini cocok untuk sistem yang terdistribusi.",
+      "seconds": 4.433333333333334,
+      "motion": "distributed-fit-26",
+      "visual": {
+        "type": "id-story",
+        "mode": "distributed-fit",
+        "kicker": "KECOCOKAN",
+        "caption": "Beberapa mesin bekerja mandiri."
+      }
+    },
+    {
+      "text": "Beberapa server, banyak lokasi",
+      "voiceText": "Misalnya aplikasi lo punya beberapa server, atau data dibuat dari banyak lokasi.",
+      "seconds": 6.9,
+      "motion": "many-servers-27",
+      "visual": {
+        "type": "id-story",
+        "mode": "many-servers",
+        "kicker": "CONTOH PENERAPAN",
+        "caption": "Data dibuat di beberapa titik."
+      }
+    },
+    {
+      "text": "Auto increment unggul di kesederhanaan",
+      "voiceText": "Jadi intinya auto increment itu unggul di kesederhanaan.",
+      "seconds": 3.966666666666667,
+      "motion": "auto-summary-28",
+      "visual": {
+        "type": "id-story",
+        "mode": "auto-summary",
+        "kicker": "RANGKUMAN",
+        "caption": "Ringkas dan efisien untuk alur terpusat."
+      }
+    },
+    {
+      "text": "UUID unggul untuk sistem tersebar",
+      "voiceText": "UUID menang di fleksibilitas untuk sistem yang terdistribusi.",
+      "seconds": 4.133333333333334,
+      "motion": "uuid-summary-29",
+      "visual": {
+        "type": "id-story",
+        "mode": "uuid-summary",
+        "kicker": "RANGKUMAN",
+        "caption": "Fleksibel saat ID dibuat di banyak tempat."
+      }
+    }
+  ]
+}

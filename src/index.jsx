@@ -8,6 +8,8 @@ import { UrlStoryVideo } from './url-story.jsx';
 import { CookieLocalStoryVideo } from './cookie-local-story.jsx';
 import { ConcurrencyStoryVideo } from './concurrency-story.jsx';
 import { SqlNosqlStoryVideo } from './sql-nosql-story.jsx';
+import { IdStoryVideo } from './id-story.jsx';
+import { NormalizationStoryVideo } from './normalization-story.jsx';
 import example from '../contents/example.json';
 import gitVsGithub from '../contents/git-vs-github.json';
 import gitVsGithubLegacy from '../archive/git-vs-github-legacy.json';
@@ -17,9 +19,31 @@ import urlStory from '../contents/struktur-url.json';
 import cookieLocalStory from '../contents/cookie-vs-localstorage.json';
 import concurrency from '../contents/concurrency.json';
 import sqlNosql from '../contents/sql-vs-nosql.json';
+import idStory from '../contents/auto-increment-vs-uuid.json';
+import normalizationStory from '../contents/normalization-vs-denormalization.json';
 import { getVideoConfig } from './project.js';
 
 const Root = () => (<>
+  <Composition
+    id="NormalizationVsDenormalization"
+    component={NormalizationStoryVideo}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={getVideoConfig(normalizationStory).durationInFrames}
+    defaultProps={{ project: normalizationStory }}
+    calculateMetadata={({ props }) => getVideoConfig(props.project)}
+  />
+  <Composition
+    id="AutoIncrementVsUuid"
+    component={IdStoryVideo}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={getVideoConfig(idStory).durationInFrames}
+    defaultProps={{ project: idStory }}
+    calculateMetadata={({ props }) => getVideoConfig(props.project)}
+  />
   <Composition
     id="SqlVsNosql"
     component={SqlNosqlStoryVideo}

@@ -1,0 +1,175 @@
+1
+00:00:00,000 --> 00:00:04,222
+Ini full breakdown normalization dan denormalization
+
+2
+00:00:04,222 --> 00:00:06,333
+database. Sini kita bahas.
+
+3
+00:00:06,333 --> 00:00:10,327
+Pernah nggak lo lihat database yang datanya dipisah ke
+
+4
+00:00:10,327 --> 00:00:15,133
+banyak tabel? Ada tabel users, orders, products, dan order items.
+
+5
+00:00:15,133 --> 00:00:18,925
+Terus kepikiran, kenapa nggak digabungin aja semuanya
+
+6
+00:00:18,925 --> 00:00:21,000
+jadi satu tabel biar gampang?
+
+7
+00:00:21,000 --> 00:00:24,114
+Nah, ini ada hubungannya sama dua konsep, yaitu
+
+8
+00:00:24,114 --> 00:00:26,367
+normalization dan denormalization.
+
+9
+00:00:26,367 --> 00:00:30,382
+Normalization adalah proses menyusun data supaya lebih
+
+10
+00:00:30,382 --> 00:00:33,133
+terstruktur dan mengurangi duplikasi.
+
+11
+00:00:33,133 --> 00:00:36,936
+Contohnya kayak gini. Misalnya lo punya tabel pesanan,
+
+12
+00:00:36,936 --> 00:00:40,739
+isinya ada nama customer, email customer, nama produk,
+
+13
+00:00:40,739 --> 00:00:42,500
+harga produk, dan jumlah.
+
+14
+00:00:42,500 --> 00:00:46,008
+Kalau customer yang sama beli lima kali, nama dan
+
+15
+00:00:46,008 --> 00:00:48,800
+emailnya bisa ikut tersimpan lima kali.
+
+16
+00:00:48,800 --> 00:00:52,098
+Nah, lewat normalization, data tadi kita pecah. Data
+
+17
+00:00:52,098 --> 00:00:54,000
+customer masuk ke tabel users,
+
+18
+00:00:54,000 --> 00:00:58,794
+data product masuk ke products, pesanan ke orders, dan
+
+19
+00:00:58,794 --> 00:01:02,967
+detail barang yang dibeli masuk ke order items.
+
+20
+00:01:02,967 --> 00:01:06,583
+Semua tabel itu dihubungkan menggunakan ID.
+
+21
+00:01:06,583 --> 00:01:11,967
+Keuntungannya data ini lebih konsisten, tapi ada satu trade off.
+
+22
+00:01:11,967 --> 00:01:15,496
+Karena datanya dipisah ke banyak tabel, saat ingin
+
+23
+00:01:15,496 --> 00:01:19,096
+membaca informasi lengkap, database perlu melakukan
+
+24
+00:01:19,096 --> 00:01:20,367
+yang namanya join.
+
+25
+00:01:20,367 --> 00:01:23,439
+Sekarang denormalization. Denormalization adalah
+
+26
+00:01:23,439 --> 00:01:26,831
+ketika kita sengaja menyimpan data yang redundan atau
+
+27
+00:01:26,831 --> 00:01:30,031
+menggabungkan sebagian data untuk mempermudah atau
+
+28
+00:01:30,031 --> 00:01:31,567
+mempercepat proses baca.
+
+29
+00:01:31,567 --> 00:01:34,959
+Misalnya di tabel order kita ikut menyimpan customer
+
+30
+00:01:34,959 --> 00:01:39,133
+name, padahal nama tersebut sebenarnya sudah ada di tabel users.
+
+31
+00:01:39,133 --> 00:01:42,556
+Kenapa sengaja bikin data duplikat? Karena di beberapa
+
+32
+00:01:42,556 --> 00:01:45,535
+kasus, kecepatan membaca data itu lebih penting
+
+33
+00:01:45,535 --> 00:01:47,500
+daripada menghindari duplikasi.
+
+34
+00:01:47,500 --> 00:01:50,855
+Misalnya dashboard yang dibuka jutaan kali. Daripada
+
+35
+00:01:50,855 --> 00:01:54,339
+setiap request harus menghitung atau join banyak data,
+
+36
+00:01:54,339 --> 00:01:57,500
+kita bisa menyimpan hasil yang sudah siap dibaca.
+
+37
+00:01:57,500 --> 00:02:02,533
+Tapi konsekuensinya, kita punya data yang sama di beberapa tempat.
+
+38
+00:02:02,533 --> 00:02:05,580
+Kalau satu data berubah, kita harus memastikan
+
+39
+00:02:05,580 --> 00:02:07,567
+salinannya juga tetap sinkron.
+
+40
+00:02:07,567 --> 00:02:10,859
+Kalau tidak, bisa muncul data yang tidak konsisten.
+
+41
+00:02:10,859 --> 00:02:12,667
+Jadi perbedaannya sederhana.
+
+42
+00:02:12,667 --> 00:02:17,700
+Normalization mengurangi duplikasi dan menjaga data tetap rapi.
+
+43
+00:02:17,700 --> 00:02:21,029
+Sedangkan denormalization menerima sebagian duplikasi
+
+44
+00:02:21,029 --> 00:02:23,667
+demi performa atau kemudahan membaca data.

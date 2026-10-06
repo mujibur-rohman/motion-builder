@@ -13,7 +13,7 @@ try {
   }
   const project = JSON.parse(await readFile(contentPath, 'utf8'));
   getVideoConfig(project);
-  const composition = project.template === 'git-vs-github' ? 'GitVsGithubLegacy' : project.template === 'cross-app-tracking' ? 'CrossAppTracking' : project.template === 'cookie-story' ? 'BahasTuntasCookie' : project.template === 'url-story' ? 'StrukturUrl' : project.template === 'cookie-local-story' ? 'CookieVsLocalStorage' : project.template === 'concurrency-story' ? 'Concurrency' : project.template === 'sql-vs-nosql-story' ? 'SqlVsNosql' : 'Motion';
+  const composition = project.template === 'normalization-story' ? 'NormalizationVsDenormalization' : project.template === 'id-story' ? 'AutoIncrementVsUuid' : project.template === 'git-vs-github' ? 'GitVsGithubLegacy' : project.template === 'cross-app-tracking' ? 'CrossAppTracking' : project.template === 'cookie-story' ? 'BahasTuntasCookie' : project.template === 'url-story' ? 'StrukturUrl' : project.template === 'cookie-local-story' ? 'CookieVsLocalStorage' : project.template === 'concurrency-story' ? 'Concurrency' : project.template === 'sql-vs-nosql-story' ? 'SqlVsNosql' : 'Motion';
   const slug = path.basename(contentPath, '.json');
   const outputOption = renderOptions.find((option) => option.startsWith('--output='));
   const output = outputOption ? path.resolve(outputOption.slice('--output='.length)) : path.resolve('out', `${slug}.mp4`);

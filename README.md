@@ -98,3 +98,25 @@ npm run render -- contents/sql-vs-nosql.json
 ```
 
 Komposisi Studio bernama `SqlVsNosql`. Hasil video ada di `out/sql-vs-nosql.mp4`.
+
+## Konten: Auto Increment ID vs UUID
+
+`contents/auto-increment-vs-uuid.json` memetakan audio asli 2 menit 13,5 detik menjadi 29 adegan. Transkripsi dan petunjuk visual per detik ada di `contents/auto-increment-vs-uuid-storyboard.md`, sedangkan subtitle ada di `contents/auto-increment-vs-uuid.srt`. Nomor ID, tabel, URL, antrean, gerbang akses, dan server digambar sebagai elemen SVG yang bergerak selama adegan.
+
+```bash
+npm run studio -- contents/auto-increment-vs-uuid.json
+npm run render -- contents/auto-increment-vs-uuid.json
+```
+
+Komposisi Studio bernama `AutoIncrementVsUuid`. Hasil video ada di `out/auto-increment-vs-uuid.mp4`.
+
+## Konten: Normalization vs Denormalization
+
+`contents/normalization-vs-denormalization.json` memakai audio asli 143,67 detik yang dilampirkan pengguna. Walaupun berkas sumber bernama “Gang Masjid 59.mp3”, isi narasinya membahas normalization dan denormalization database. Dua puluh adegan berdurasi minimal 5 detik mengikuti cap waktu narasi; transkrip dan konsep gerak ada di `contents/normalization-vs-denormalization-storyboard.md`, subtitle di `.srt`. Ilustrasi tabel, duplikasi, relasi ID, JOIN, dashboard, dan sinkronisasi salinan digambar sebagai elemen vektor terpisah dalam `src/normalization-story.jsx` supaya objek bergerak sepanjang adegan.
+
+```bash
+npm run studio -- contents/normalization-vs-denormalization.json
+npm run render -- contents/normalization-vs-denormalization.json
+```
+
+Komposisi Studio bernama `NormalizationVsDenormalization`. Hasil render ada di `out/normalization-vs-denormalization.mp4`.
